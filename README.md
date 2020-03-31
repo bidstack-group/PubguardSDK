@@ -44,9 +44,9 @@ pubguardKey = "xxxxxxxxxxxxxxxxxxx"
 # Android
 
 
-The latest version of the Android Pubguard Library is **1.22.0**
+The latest version of the Android Pubguard Library is **1.0.0**
 
-**NB do not minify the Pubguard library**
+**Note: do not minify the Pubguard library**
 
 
 
@@ -59,21 +59,24 @@ Installing the Pubguard library requires the following lines to be added to your
 Please add the following lines to your **build.Gradle(Module: app)** and update the credentials to use your key in 'password':
 
 ```
+...
+apply plugin: 'com.bidstack.aspectj-ext'
+
 repositories {
     maven {
-            url 'https://customer.pubguard.com/maven/releases'
-
-            credentials {
+        // TODO: update url when publishing is set up
+        url 'https://customer.pubguard.com/maven/releases'
+        credentials {
             username 'pubguard'
             password 'YOUR_PUBGUARD_KEY_HERE'
-            }
         }
+    }
 }
 
 dependencies {
 ...
     implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
-    implementation 'com.pubguard:pubguard-client:1.22.0'
+    implementation 'com.bidstack.pubguard:pubguard-sdk-android:1.0.0'
 
 }
 
@@ -84,19 +87,19 @@ Note that we require `implementation 'com.google.android.gms:play-services-basem
 
 #### Initialising the Library
 
-The Pubguard Library should be initialised once at app launch, Here's an example of how to call the init method in your AppDelegate:
-
+The Pubguard Library should be initialised once at app launch, Here's an example of how to call the init method in
+Application class:
 ```
-import com.pubguard.client.Pubguard;
+import com.bidstack.pubguard.sdk.SquirellSDK
 …
 
-public class QuizzyApplication extends Application {
+public class MyApplication extends Application {
 
     @Override public void onCreate() {
         super.onCreate();
 
-        Pubguard.init(this, "YOUR_PUBGUARD_KEY_HERE");
-        }
+        SquirellSDK.getInstance().init(this, "YOUR_PUBGUARD_KEY_HERE");
+    }
 }
 ```
 
@@ -243,7 +246,7 @@ Here is a guide based based on our compiling with our test apps, please bear in 
 | ---- | ----- | ------- |
 |gson | | ~50kb  |
 |retrofit | | ~150kb  |
-| Total |~140kb | ~450kb  |
+| Total |~140kb | ~900kb  |
 
 ---
 
@@ -256,22 +259,24 @@ These are SDKs designed specifically for serving advertising content into your a
 | SDK     | iOS   | Android |
 | ------- | ----- | ------- |
 | AdColony   | 3.3.7|    |
-| AmazonAd   | 2.2.15.1 | 5.8.2   |
-| Amazon Publisher Services | 2.1.2 | |
-| AppNexusSDK | 5.2 |  4.0.1  |
-| FBAudienceNetwork | 5.2.0 | 4.28.2  |
-| Firebase/AdMob | 4.10.0 | 15.0.0  |
-| Google-Mobile-Ads-SDK | 7.42.2  | 17.1.2 |
-| InMobiSDK | 8.0.5 | 7.1.1  |
-| IronSourceSDK | 6.8.3 | 6.7.12 |
-| AOL one (MMAdSDK) | 6.8.2| 6.8.0 |
-| MoPub | 5.7.0| 5.5.0 |
-| OpenX | 4.8.1 |4.7.0 |
-| RFMAdSDK | 6.4.0| 6.4.0|
-| SmaatoSDK | 10.2.0 | 9.1.2 |
+| AmazonAd   | 2.2.15.1 |    |
+| Amazon Publisher Services |  | |
+| AppNexusSDK | 5.2 |    |
+| FBAudienceNetwork | 5.2.0 | 5.7.1 |
+| Firebase/AdMob | 4.10.0 |  19.0.0 |
+| Mopub mediation AdMob |  | 15.0.0.8 |
+| Google-Mobile-Ads-SDK | 7.42.2  | 19.0.0 |
+| InMobiSDK | 8.0.5 | 9.0.1 |
+| IronSourceSDK | 6.8.3 |  |
+| AOL one (MMAdSDK) | 6.8.2|  |
+| MoPub | 5.7.0 | 5.10.0 |
+| OpenX | 4.8.1 | |
+| RFMAdSDK | 6.4.0| |
+| SmaatoSDK | 10.2.0 | |
 | Tapjoy | 12.2.1 | |
-| Unity Ads | 3.0.3 | |
-| Verizon | 1.1.2 | |
+| Unity Ads | 3.0.3 | 3.4.2 |
+| Mopub mediation Unity |  | 3.2.0.1 |
+| Verizon | 1.1.2 | 1.3.1 |
 | Vungle | 6.3.2 | |
 
 ### Mediation Support
@@ -294,7 +299,9 @@ Mediation platforms or networks can be used to manage the various SDKs within yo
 
 ### Android Requirements
 
-+ Android 5.0 and up
++ Android 7.0 and up
++ Android Studio 3.6.1 and up
++ Gradle 6.0 and up
 
 ---
 
