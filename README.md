@@ -119,7 +119,7 @@ There are 2 methods of installing the Pubguard framework:
 Please add the following line to your Podfile (adding in your app key):
 
 ```
-pod 'Pubguard', podspec: 'https://customer.pubguard.com/cocoapods/pubguard-ios-framework/1.28.0/Pubguard-1.28.0.podspec?access_token=YOUR_PUBGUARD_KEY_HERE'
+pod 'PubguardSDK', :git => 'https://github.com/bidstack-group/PubguardSDK.git'
 ```
 
 Then run "pod install --repo-update"
@@ -138,7 +138,7 @@ Unity supports installation via cocoapods and manual installation. Framework mus
 Please add the following line to your Podfile (adding in your app key):
 
 ```
-pod 'Pubguard', podspec: 'https://customer.pubguard.com/cocoapods/pubguard-ios-framework/1.28.0/Pubguard-1.28.0.podspec?access_token=YOUR_PUBGUARD_KEY_HERE'
+pod 'PubguardSDK', :git => 'https://github.com/bidstack-group/PubguardSDK.git'
 ```
 
 Then run "pod install --repo-update"
