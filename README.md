@@ -60,7 +60,7 @@ Please add the following lines to your **build.Gradle(Module: app)** and update 
 
 ```
 ...
-apply plugin: 'com.bidstack.aspectj-ext'
+apply plugin: 'com.bidstack.pubguard.aspectj-ext'
 
 repositories {
     maven {
@@ -73,10 +73,58 @@ repositories {
     }
 }
 
+aspectj {
+    includeJar.addAll([
+            "play-services-ads-lite",
+            "play-services-ads",
+            "play-services-base",
+            "pubguard",
+            "mopub-volley",
+            "libAvid-mopub",
+            "mopub-sdk",
+            "mopub-sdk-banner",
+            "mopub-sdk-rewardedvideo",
+            "mopub-sdk-interstitial",
+            "mopub-sdk-native-video",
+            "mopub-sdk-native-static",
+            "mopub-sdk-base",
+            "android-vas-standard-edition",
+            "android-vas-inline-web-adapter",
+            "android-vas-inline-placement",
+            "android-vas-interstitial-vast-adapter",
+            "android-vas-interstitial-web-adapter",
+            "android-vas-interstitial-placement",
+            "android-vas-native-verizon-native-adapter",
+            "android-vas-native-placement",
+            "android-vas-verizon-native-controller",
+            "android-vas-vast-controller",
+            "android-vas-video-player",
+            "android-vas-web-controller",
+            "android-vas-web-view",
+            "android-vas-omsdk",
+            "android-vas-verizon-ssp-reporter",
+            "android-vas-verizon-ssp-waterfall-provider",
+            "android-vas-uri-experience",
+            "android-vas-sideloading-waterfall-provider",
+            "android-vas-support",
+            "android-vas-verizon-ssp-config-provider",
+            "android-vas-core",
+            "unity-ads",
+            "unityads",
+            "admob",
+            "audience-network-sdk",
+            "inmobi-ads",
+            "sdk"])
+//    includeAllJars = true
+    ignoreErrors = true
+    breakOnError = false
+    debugInfo = true
+}
+
 dependencies {
 ...
     implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
-    implementation 'com.bidstack.pubguard:pubguard-sdk-android:1.0.0'
+    implementation 'com.bidstack.pubguard:pubguard:1.0.0'
 
 }
 
@@ -90,7 +138,7 @@ Note that we require `implementation 'com.google.android.gms:play-services-basem
 The Pubguard Library should be initialised once at app launch, Here's an example of how to call the init method in
 Application class:
 ```
-import com.bidstack.pubguard.sdk.SquirellSDK
+import com.bidstack.pubguard.Pubguard;
 …
 
 public class MyApplication extends Application {
@@ -98,7 +146,7 @@ public class MyApplication extends Application {
     @Override public void onCreate() {
         super.onCreate();
 
-        SquirellSDK.getInstance().init(this, "YOUR_PUBGUARD_KEY_HERE");
+        Pubguard.init(this, "YOUR_PUBGUARD_KEY_HERE");
     }
 }
 ```
