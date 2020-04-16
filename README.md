@@ -347,7 +347,7 @@ Mediation platforms or networks can be used to manage the various SDKs within yo
 
 ### Android Requirements
 
-+ Android 7.0 and up
++ Android 4.4 and up
 + Android Studio 3.6.1 and up
 + Gradle 6.0 and up
 
