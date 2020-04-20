@@ -48,8 +48,6 @@ The latest version of the Android Pubguard Library is **1.0.0**
 
 **Note: do not minify the Pubguard library**
 
-
-
 ### Installing
 
 Installing the Pubguard library requires the following lines to be added to your gradle build as follows:
@@ -58,7 +56,7 @@ Installing the Pubguard library requires the following lines to be added to your
 
 Please add the following lines to your **build.Gradle(Module: app)** and update the credentials to use your key in 'password':
 
-```
+```groovy
 ...
 apply plugin: 'com.bidstack.pubguard.aspectj-ext'
 
@@ -73,54 +71,6 @@ repositories {
     }
 }
 
-aspectj {
-    includeJar.addAll([
-            "play-services-ads-lite",
-            "play-services-ads",
-            "play-services-base",
-            "pubguard",
-            "mopub-volley",
-            "libAvid-mopub",
-            "mopub-sdk",
-            "mopub-sdk-banner",
-            "mopub-sdk-rewardedvideo",
-            "mopub-sdk-interstitial",
-            "mopub-sdk-native-video",
-            "mopub-sdk-native-static",
-            "mopub-sdk-base",
-            "android-vas-standard-edition",
-            "android-vas-inline-web-adapter",
-            "android-vas-inline-placement",
-            "android-vas-interstitial-vast-adapter",
-            "android-vas-interstitial-web-adapter",
-            "android-vas-interstitial-placement",
-            "android-vas-native-verizon-native-adapter",
-            "android-vas-native-placement",
-            "android-vas-verizon-native-controller",
-            "android-vas-vast-controller",
-            "android-vas-video-player",
-            "android-vas-web-controller",
-            "android-vas-web-view",
-            "android-vas-omsdk",
-            "android-vas-verizon-ssp-reporter",
-            "android-vas-verizon-ssp-waterfall-provider",
-            "android-vas-uri-experience",
-            "android-vas-sideloading-waterfall-provider",
-            "android-vas-support",
-            "android-vas-verizon-ssp-config-provider",
-            "android-vas-core",
-            "unity-ads",
-            "unityads",
-            "admob",
-            "audience-network-sdk",
-            "inmobi-ads",
-            "sdk"])
-//    includeAllJars = true
-    ignoreErrors = true
-    breakOnError = false
-    debugInfo = true
-}
-
 dependencies {
 ...
     implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
@@ -132,6 +82,78 @@ dependencies {
 Note that we require `implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'`
 [GOOGLE_AD_VERSION] Version is based on your google ads version as per above. Even if you are not using Google ads, you still need to add support for Google services.
 
+### Installing locally
+
+* Copy `aspects.jar` into your project's root
+
+* Into project's `build.gradle`  add:
+
+  ```groovy
+  buildscript {
+      repositories {
+        	...
+      }
+      dependencies {
+        	classpath files('aspectj.jar')
+      }
+  }
+  ```
+
+* Copy `pubguard.aar` into your main `app` module `libs` folder
+
+* Into project's `build.gradle`  add:
+
+  ```groovy
+  buildscript {
+      repositories {
+          flatDir {
+              dirs 'libs'
+          }
+      }
+      dependencies {
+        	classpath files('aspectj.jar')
+      }
+  }
+  ```
+
+* Into module's `build.gradle` add:
+
+  ```groovy
+  dependencies {
+    	implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
+  		implementation fileTree(dir: 'libs', include: 'pubguard.aar')
+    
+    	implementation "androidx.core:core-ktx:1.2.0"
+      implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+      implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3'
+      implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
+  
+      testImplementation 'junit:junit:4.12'
+      androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+      androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+  
+      implementation('androidx.recyclerview:recyclerview:1.1.0') {
+          transitive = true
+      }
+      implementation('com.squareup.retrofit2:converter-gson:2.6.0') {
+          transitive = true
+      }
+      implementation('com.squareup.retrofit2:retrofit:2.6.0') {
+          transitive = true
+      }
+      implementation('com.squareup.retrofit2:retrofit-mock:2.5.0') {
+          transitive = true
+      }
+      implementation('com.google.code.gson:gson:2.8.5') {
+          transitive = true
+      }
+      implementation 'com.orhanobut:logger:2.1.1'
+      implementation 'com.squareup.okhttp3:logging-interceptor:4.1.0'
+      implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+  }
+  ```
+
+  
 
 #### Initialising the Library
 
@@ -280,7 +302,6 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 
 For all release notes and previous versions please see our [changelog](changelog.md).
-
 
 ---
 
