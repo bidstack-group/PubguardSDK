@@ -308,7 +308,6 @@ These are SDKs designed specifically for serving advertising content into your a
 | ------- | ----- | ------- |
 | AdColony   | 4.1.4|    |
 | AmazonAd   | 3.0.0 |    |
-| Amazon Publisher Services | | |
 | AppNexusSDK | 7.2 |    |
 | FBAudienceNetwork | 5.8.0 | 5.7.1 |
 | Firebase/AdMob | 6.3.0 |  19.0.0 |
@@ -335,8 +334,8 @@ Mediation platforms or networks can be used to manage the various SDKs within yo
 | ------- | ----- | ------- |
 | AATKit (addApptr)   | 2.65.34|    |
 | DFP   | 7.31.0 | 15.0.0 |
-| AppNexusSDK | 4.0.1 |  4.8  |
-| MoPub | 5.1.0| 5.1.0 |
+| AppNexusSDK | 7.2 |  4.8  |
+| MoPub | 5.11.0 | 5.1.0 |
 
 ## Requirements
 
