@@ -306,26 +306,26 @@ These are SDKs designed specifically for serving advertising content into your a
 
 | SDK     | iOS   | Android |
 | ------- | ----- | ------- |
-| AdColony   | 3.3.7|    |
-| AmazonAd   | 2.2.15.1 |    |
-| Amazon Publisher Services |  | |
-| AppNexusSDK | 5.2 |    |
-| FBAudienceNetwork | 5.2.0 | 5.7.1 |
-| Firebase/AdMob | 4.10.0 |  19.0.0 |
+| AdColony   | 4.1.4|    |
+| AmazonAd   | 3.0.0 |    |
+| Amazon Publisher Services | | |
+| AppNexusSDK | 7.2 |    |
+| FBAudienceNetwork | 5.8.0 | 5.7.1 |
+| Firebase/AdMob | 6.3.0 |  19.0.0 |
 | Mopub mediation AdMob |  | 15.0.0.8 |
-| Google-Mobile-Ads-SDK | 7.42.2  | 19.0.0 |
-| InMobiSDK | 8.0.5 | 9.0.1 |
-| IronSourceSDK | 6.8.3 |  |
+| Google-Mobile-Ads-SDK | 7.57.0  | 19.0.0 |
+| InMobiSDK | 9.0.6 | 9.0.1 |
+| IronSourceSDK | 6.15.0.1 |  |
 | AOL one (MMAdSDK) | 6.8.2|  |
-| MoPub | 5.7.0 | 5.10.0 |
+| MoPub | 5.11.0 | 5.10.0 |
 | OpenX | 4.8.1 | |
 | RFMAdSDK | 6.4.0| |
-| SmaatoSDK | 10.2.0 | |
-| Tapjoy | 12.2.1 | |
-| Unity Ads | 3.0.3 | 3.4.2 |
+| SmaatoSDK | 10.2.6 | |
+| Tapjoy | 12.4.2 | |
+| Unity Ads | 3.4.2 | 3.4.2 |
 | Mopub mediation Unity |  | 3.2.0.1 |
-| Verizon | 1.1.2 | 1.3.1 |
-| Vungle | 6.3.2 | |
+| Verizon | 1.5.0 | 1.3.1 |
+| Vungle | 6.5.3 | |
 
 ### Mediation Support
 
