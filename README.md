@@ -327,7 +327,7 @@ These are SDKs designed specifically for serving advertising content into your a
 
 | SDK     | iOS   | Android |
 | ------- | ----- | ------- |
-| AdColony   | 4.1.4|    |
+| AdColony   | 4.1.4|  4.1.0+  |
 | AmazonAd   | 3.0.0 |    |
 | AppNexusSDK | 7.2 |    |
 | FBAudienceNetwork | 5.8.0 | 5.7.1 |
