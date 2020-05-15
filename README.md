@@ -54,53 +54,54 @@ Installing the Pubguard library requires the following lines to be added to your
 
 #### Using Maven
 
-Please add the following lines to your **build.Gradle(Module: app)** and update the credentials to use your key in 'password':
-
+* Please add the folowing lines to your **build.gradle(Project level)** and update the credentials to use your key in 'password':
 ```groovy
-...
-apply plugin: 'com.bidstack.pubguard.aspectj-ext'
-
-repositories {
-    maven {
-        // TODO: update url when publishing is set up
-        url 'https://customer.pubguard.com/maven/releases'
-        credentials {
-            username 'pubguard'
-            password 'YOUR_PUBGUARD_KEY_HERE'
+    buildscript {
+        repositories {
+            maven {
+                // TODO: update url when publishing is set up
+                url 'https://customer.pubguard.com/maven/releases'
+                credentials {
+                    username 'pubguard'
+                    password 'YOUR_PUBGUARD_KEY_HERE'
+                }
+            }
         }
     }
-}
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.0'
+        classpath 'com.bidstack.pubguard:aspectj:3.6.0'
+    }
+```
+
+* Please add the following lines to your **build.gradle(Module: app)**:
+
+```groovy
+apply plugin: 'com.bidstack.pubguard.aspectj-ext'
 
 dependencies {
-...
     implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
     implementation 'com.bidstack.pubguard:pubguard:1.0.0'
-
 }
 
 ```
-Note that we require `implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'`
+**Note** that we require `implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'`
 [GOOGLE_AD_VERSION] Version is based on your google ads version as per above. Even if you are not using Google ads, you still need to add support for Google services.
+
+**Note** If your project is using not the latest Gradle or Android Gradle Plugin versions, you should choose appropriate `com.bidstack.pubguard:aspectj` verison form the table or update Gradle to the latest version
+| Aspectj plugin version | Required Android Gradle Plugin version | Required Gradle version | Required Kotlin version (only if you are using kotlin)
+| ---------------------- | -------------------------------------- | ----------------------- | ----------------------- |
+| 3.2.0                  | 3.2.0 - 3.2.1                          | 4.6+                    | 1.1.4 - 1.3.50 |
+| 3.3.0                  | 3.3.0 - 3.3.2                          | 4.10.1+                 | 1.3.0+ |
+| 3.4.0                  | 3.4.0 - 3.4.1                           | 5.1.1+                  | 1.3.10+ |
+| 3.5.0                  | 3.5.0 - 3.5.3                          | 5.4.1                   | 1.3.10+ |
+| 3.6.0                  | 3.6.0                                  | 5.6.4 - 6.0             | 1.3.10+ |
+
 
 ### Installing locally
 
 * Copy `aspects.jar` into your project's root
-
-* Into project's `build.gradle`  add:
-
-  ```groovy
-  buildscript {
-      repositories {
-        	...
-      }
-      dependencies {
-        	classpath files('aspectj.jar')
-      }
-  }
-  ```
-
 * Copy `pubguard.aar` into your main `app` module `libs` folder
-
 * Into project's `build.gradle`  add:
 
   ```groovy
