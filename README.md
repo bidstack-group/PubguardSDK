@@ -88,16 +88,27 @@ dependencies {
 **Note** that we require `implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'`
 [GOOGLE_AD_VERSION] Version is based on your google ads version as per above. Even if you are not using Google ads, you still need to add support for Google services.
 
-**Note** If your project is using not the latest Gradle or Android Gradle Plugin versions, you should choose appropriate `com.bidstack.pubguard:aspectj` verison form the table or update Gradle to the latest version
+**Note** If your project is using not the latest Gradle or Android Gradle Plugin versions, you should choose appropriate `com.bidstack.pubguard:aspectj` version form the table or update Gradle to the latest version
 
-| Aspectj plugin version | Required Android Gradle Plugin version | Required Gradle version | Required Kotlin version (only if you are using kotlin) |
-| ---------------------- | -------------------------------------- | ----------------------- | ------------------------------------------------------ |
-| 3.2.0.0                | 3.2.0 - 3.2.1                          | 4.6+                    | 1.1.4 - 1.3.50                                         |
-| 3.3.0.0                | 3.3.0 - 3.3.2                          | 4.10.1+                 | 1.3.0+                                                 |
-| 3.4.0.0                | 3.4.0 - 3.4.1                          | 5.1.1+                  | 1.3.10+                                                |
-| 3.5.0.0                | 3.5.0 - 3.5.3                          | 5.4.1                   | 1.3.10+                                                |
-| 3.6.0.0                | 3.6.0+                                 | 5.6.4                   | 1.3.10+                                                |
-| 3.6.0.1                | 3.6.0+                                 | 6.0+                    | 1.3.20+                                                |
+| Aspectj plugin version | Required Android Gradle Plugin version | Required Gradle version |
+| ---------------------- | -------------------------------------- | ----------------------- |
+| 3.2.0.0                | 3.2.0 - 3.2.1                          | 4.6+                    |
+| 3.3.0.0                | 3.3.0 - 3.3.2                          | 4.10.1+                 |
+| 3.4.0.0                | 3.4.0 - 3.4.1                          | 5.1.1+                  |
+| 3.5.0.0                | 3.5.0 - 3.5.3                          | 5.4.1                   |
+| 3.6.0.0                | 3.6.0+                                 | 5.6.4                   |
+| 3.6.0.1                | 3.6.0+                                 | 6.0+                    |
+If you use Kotlin, choose the appropriate version:
+
+| Gradle Plugin version | Required Kotlin version |
+| --------------------- | ----------------------- |
+| 4.6 - 4.8.1           | 1.2.51 - 1.3.50         |
+| 4.9 - 4.10            | 1.2.51+                 |
+| 4.10.1 - 5.1          | 1.3.0+                  |
+| 5.1.1 - 5.6.4         | 1.3.10+                 |
+| 6.0+                  | 1.3.20+                 |
+
+
 
 ### Installing locally
 
