@@ -1,0 +1,6 @@
+framework module Pubguard {
+  umbrella header "Pubguard.h"
+
+  export *
+  module * { export * }
+}
