@@ -136,16 +136,16 @@ If you use Kotlin, choose the appropriate version:
   dependencies {
     	implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
   		implementation fileTree(dir: 'libs', include: 'pubguard.aar')
-    
+
     	implementation "androidx.core:core-ktx:1.2.0"
       implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
       implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3'
       implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
-  
+
       testImplementation 'junit:junit:4.12'
       androidTestImplementation 'androidx.test.ext:junit:1.1.1'
       androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-  
+
       implementation('androidx.recyclerview:recyclerview:1.1.0') {
           transitive = true
       }
@@ -167,7 +167,7 @@ If you use Kotlin, choose the appropriate version:
   }
   ```
 
-  
+
 
 #### Initialising the Library
 
@@ -354,7 +354,6 @@ These are SDKs designed specifically for serving advertising content into your a
 | MoPub | 5.11.0 | 5.10.0 |
 | OpenX | 4.8.1 | |
 | RFMAdSDK | 6.4.0| |
-| SmaatoSDK | 10.2.6 | |
 | Tapjoy | 12.4.2 | |
 | Unity Ads | 3.4.2 | 3.4.2 |
 | Mopub mediation Unity |  | 3.2.0.1 |
