@@ -98,6 +98,7 @@ dependencies {
 | 3.5.0.0                | 3.5.0 - 3.5.3                          | 5.4.1                   |
 | 3.6.0.0                | 3.6.0+                                 | 5.6.4                   |
 | 3.6.0.1                | 3.6.0+                                 | 6.0+                    |
+| 4.0.0.0                | 4.0.0+                                 | 6.1.1+                  |
 
 If you use Kotlin, choose the appropriate version:
 
