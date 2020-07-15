@@ -98,6 +98,7 @@ dependencies {
 | 3.5.0.0                | 3.5.0 - 3.5.3                          | 5.4.1                   |
 | 3.6.0.0                | 3.6.0+                                 | 5.6.4                   |
 | 3.6.0.1                | 3.6.0+                                 | 6.0+                    |
+| 4.0.0.0                | 4.0.0+                                 | 6.1.1+                  |
 
 If you use Kotlin, choose the appropriate version:
 
@@ -125,7 +126,9 @@ If you use Kotlin, choose the appropriate version:
           }
       }
       dependencies {
-        	classpath files('aspectj.jar')
+          classpath files('aspectj.jar')
+          classpath "org.aspectj:aspectjtools:1.9.4"
+          classpath "org.aspectj:aspectjrt:1.9.4"
       }
   }
   ```
@@ -134,10 +137,10 @@ If you use Kotlin, choose the appropriate version:
 
   ```groovy
   dependencies {
-    	implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
-  		implementation fileTree(dir: 'libs', include: 'pubguard.aar')
+      implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
+      implementation fileTree(dir: 'libs', include: 'pubguard.aar')
 
-    	implementation "androidx.core:core-ktx:1.2.0"
+      implementation "androidx.core:core-ktx:1.2.0"
       implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
       implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3'
       implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
@@ -164,6 +167,7 @@ If you use Kotlin, choose the appropriate version:
       implementation 'com.orhanobut:logger:2.1.1'
       implementation 'com.squareup.okhttp3:logging-interceptor:4.1.0'
       implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+      implementation 'commons-codec:commons-codec:1.13'
   }
   ```
 
