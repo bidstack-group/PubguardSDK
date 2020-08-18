@@ -136,38 +136,42 @@ If you use Kotlin, choose the appropriate version:
 * Into module's `build.gradle` add:
 
   ```groovy
+  apply plugin: 'com.bidstack.pubguard.aspectj-ext'
+  
   dependencies {
-      implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
-      implementation fileTree(dir: 'libs', include: 'pubguard.aar')
+    implementation fileTree(dir: 'libs', include: 'pubguard.aar')
 
-      implementation "androidx.core:core-ktx:1.2.0"
-      implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-      implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3'
-      implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
+    // android
+    implementation "androidx.core:core:1.3.1"
+    implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
 
-      testImplementation 'junit:junit:4.12'
-      androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-      androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    // android
+    compileOnly 'androidx.recyclerview:recyclerview:1.1.0'
+    compileOnly 'androidx.constraintlayout:constraintlayout:1.1.3'
 
-      implementation('androidx.recyclerview:recyclerview:1.1.0') {
-          transitive = true
-      }
-      implementation('com.squareup.retrofit2:converter-gson:2.6.0') {
-          transitive = true
-      }
-      implementation('com.squareup.retrofit2:retrofit:2.6.0') {
-          transitive = true
-      }
-      implementation('com.squareup.retrofit2:retrofit-mock:2.5.0') {
-          transitive = true
-      }
-      implementation('com.google.code.gson:gson:2.8.5') {
-          transitive = true
-      }
-      implementation 'com.orhanobut:logger:2.1.1'
-      implementation 'com.squareup.okhttp3:logging-interceptor:4.1.0'
-      implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-      implementation 'commons-codec:commons-codec:1.13'
+    // kotlin
+    compileOnly "androidx.core:core-ktx:1.3.1"
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
+
+    // networking
+    implementation 'com.squareup.retrofit2:retrofit:2.6.3'
+    implementation ('com.squareup.retrofit2:converter-protobuf:2.6.3') {
+        exclude group: 'com.google.protobuf', module: 'protobuf-java'
+    }
+    implementation 'com.google.protobuf:protobuf-lite:3.0.1'
+    implementation project(':protobuf')
+    // NOTE!!! Pubguard must use interceptor v3.12.2 in order to support android versions below api 21
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.2'
+
+    // test
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // other
+    compileOnly 'com.orhanobut:logger:2.1.1'
   }
   ```
 
@@ -175,8 +179,7 @@ If you use Kotlin, choose the appropriate version:
 
 #### Initialising the Library
 
-The Pubguard Library should be initialised once at app launch, Here's an example of how to call the init method in
-Application class:
+The Pubguard Library should be initialized once at app launch. Here's an example of how to call the init method in Application class:
 ```
 import com.bidstack.pubguard.Pubguard;
 …
@@ -186,10 +189,20 @@ public class MyApplication extends Application {
     @Override public void onCreate() {
         super.onCreate();
 
-        Pubguard.init(this, "YOUR_PUBGUARD_KEY_HERE");
+        try {
+            Pubguard.init(application, "YOUR_PUBGUARD_KEY", BuildConfig.VERSION_NAME);
+        } catch (Exception e) {
+            Log.e(TAG, "Pubguard Init exception: " + e.getMessage());
+        }
     }
 }
 ```
+
+Note:
+  All initialization parameters are mandatory and exception will be thrown if null or empty string is passed.
+  - `application` is your apps `Application` class
+  - `YOUR_PUBGUARD_KEY` is a `String` of your publisher key that can be found in Pubguard console
+  - `BuildConfig.VERSION_NAME` is a `String` of your app version name that is set in module build.gradle
 
 #### Proguard
 
