@@ -90,7 +90,7 @@ Installing the Pubguard library requires the following lines to be added to your
   dependencies {
 
     // Pubguard
-    implementation files('libs/pubguard-release-aar-1.0.0.aar')
+    implementation files('libs/pubguard.aar')
 
     // android
     implementation "androidx.core:core:1.3.1"
