@@ -52,39 +52,88 @@ The latest version of the Android Pubguard Library is **1.0.0**
 
 Installing the Pubguard library requires the following lines to be added to your gradle build as follows:
 
-#### Using Maven
+### Installing locally
 
-* Please add the folowing lines to your **build.gradle(Project level)** and update the credentials to use your key in 'password':
-```groovy
-    buildscript {
-        repositories {
-            maven {
-                // TODO: update url when publishing is set up
-                url 'https://customer.pubguard.com/maven/releases'
-                credentials {
-                    username 'pubguard'
-                    password 'YOUR_PUBGUARD_KEY_HERE'
-                }
-            }
+* Copy `pubguard.aar` and `aspectj.jar` into your main `app` module `libs` folder
+* Into project's `build.gradle`  add:
+
+  ```groovy
+  buildscript {
+      dependencies {
+          classpath files('app/libs/aspectj.jar')
+          classpath "org.aspectj:aspectjtools:1.9.4"
+          classpath "org.aspectj:aspectjrt:1.9.4"
+      }
+  }
+  allprojects {
+    repositories {
+        flatDir {
+            dirs "libs"
         }
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.0'
-        classpath 'com.bidstack.pubguard:aspectj:3.6.0'
+  }
+  ```
+
+* Into module's `build.gradle` add:
+
+  ```groovy
+  apply plugin: 'com.bidstack.pubguard.aspectj-ext'
+
+
+  android {
+      compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
     }
+  }
+
+  dependencies {
+
+    // Pubguard
+    implementation files('libs/pubguard-release-aar-1.0.0.aar')
+
+    // android
+    implementation "androidx.core:core:1.3.1"
+    implementation 'com.google.android.gms:play-services-basement:17.3.0'
+
+    // kotlin
+    implementation "androidx.core:core-ktx:1.3.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
+
+    // networking
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    // NOTE!!! We must use interceptor v3.12.2 in order to support android versions below api 21
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.12.2'
+
+    // other
+    implementation 'com.orhanobut:logger:2.1.1'
+  }
+  ```
+
+
+
+#### Initialising the Library
+
+The Pubguard Library should be initialised once at app launch, Here's an example of how to call the init method in
+Application class:
 ```
+import com.bidstack.pubguard.Pubguard;
+…
 
-* Please add the following lines to your **build.gradle(Module: app)**:
+public class MyApplication extends Application {
 
-```groovy
-apply plugin: 'com.bidstack.pubguard.aspectj-ext'
+    @Override public void onCreate() {
+        super.onCreate();
 
-dependencies {
-    implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
-    implementation 'com.bidstack.pubguard:pubguard:1.0.0'
+        Pubguard.init(this, "YOUR_PUBGUARD_KEY_HERE");
+    }
 }
-
 ```
+
 **Note** that we require `implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'`
 [GOOGLE_AD_VERSION] Version is based on your google ads version as per above. Even if you are not using Google ads, you still need to add support for Google services.
 
@@ -109,91 +158,6 @@ If you use Kotlin, choose the appropriate version:
 | 4.10.1 - 5.1          | 1.3.0+                  |
 | 5.1.1 - 5.6.4         | 1.3.10+                 |
 | 6.0+                  | 1.3.20+                 |
-
-
-
-### Installing locally
-
-* Copy `aspects.jar` into your project's root
-* Copy `pubguard.aar` into your main `app` module `libs` folder
-* Into project's `build.gradle`  add:
-
-  ```groovy
-  buildscript {
-      repositories {
-          flatDir {
-              dirs 'libs'
-          }
-      }
-      dependencies {
-          classpath files('aspectj.jar')
-          classpath "org.aspectj:aspectjtools:1.9.4"
-          classpath "org.aspectj:aspectjrt:1.9.4"
-      }
-  }
-  ```
-
-* Into module's `build.gradle` add:
-
-  ```groovy
-  dependencies {
-      implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
-      implementation fileTree(dir: 'libs', include: 'pubguard.aar')
-
-      implementation "androidx.core:core-ktx:1.2.0"
-      implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-      implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3'
-      implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
-
-      testImplementation 'junit:junit:4.12'
-      androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-      androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
-      implementation('androidx.recyclerview:recyclerview:1.1.0') {
-          transitive = true
-      }
-      implementation('com.squareup.retrofit2:converter-gson:2.6.0') {
-          transitive = true
-      }
-      implementation('com.squareup.retrofit2:retrofit:2.6.0') {
-          transitive = true
-      }
-      implementation('com.squareup.retrofit2:retrofit-mock:2.5.0') {
-          transitive = true
-      }
-      implementation('com.google.code.gson:gson:2.8.5') {
-          transitive = true
-      }
-      implementation 'com.orhanobut:logger:2.1.1'
-      implementation 'com.squareup.okhttp3:logging-interceptor:4.1.0'
-      implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-      implementation 'commons-codec:commons-codec:1.13'
-  }
-  ```
-
-
-
-#### Initialising the Library
-
-The Pubguard Library should be initialised once at app launch, Here's an example of how to call the init method in
-Application class:
-```
-import com.bidstack.pubguard.Pubguard;
-…
-
-public class MyApplication extends Application {
-
-    @Override public void onCreate() {
-        super.onCreate();
-
-        Pubguard.init(this, "YOUR_PUBGUARD_KEY_HERE");
-    }
-}
-```
-
-#### Proguard
-
-If you are using Proguard please see our section on [using Pubguard with Proguard](drd-proguard-guide.md).
 
 ---
 
