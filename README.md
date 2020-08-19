@@ -94,7 +94,7 @@ Installing the Pubguard library requires the following lines to be added to your
 
     // android
     implementation "androidx.core:core:1.3.1"
-    implementation 'com.google.android.gms:play-services-basement:17.3.0'
+    implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
 
     // kotlin
     implementation "androidx.core:core-ktx:1.3.1"
