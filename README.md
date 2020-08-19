@@ -23,7 +23,7 @@ Table of contents
 * [Requirements](#requirements)
 * [Versioning](#versioning)
 * [License](#license)
-* [FAQs](https://github.com/pubguard/pubguard-library-guide/wiki/FAQs)
+<!--* [FAQs](https://github.com/bidstack-group/pubguardSDK/wiki/FAQs)-->
 
 <!--te-->
 
