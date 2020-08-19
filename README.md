@@ -397,4 +397,4 @@ Please use the most up to date version at all times to ensure maximum support.
 
 ## License
 
-*© 2017 Minimised Media Limited (Pubguard© 2017 All Rights Reserved)*
+*© 2019 Minimised Media Limited (Pubguard© 2019 All Rights Reserved)*
