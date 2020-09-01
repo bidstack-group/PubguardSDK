@@ -141,7 +141,6 @@ public class MyApplication extends Application {
 
 | Aspectj plugin version | Required Android Gradle Plugin version | Required Gradle version |
 | ---------------------- | -------------------------------------- | ----------------------- |
-| 3.2.0.0                | 3.2.0 - 3.2.1                          | 4.6+                    |
 | 3.3.0.0                | 3.3.0 - 3.3.2                          | 4.10.1+                 |
 | 3.4.0.0                | 3.4.0 - 3.4.1                          | 5.1.1+                  |
 | 3.5.0.0                | 3.5.0 - 3.5.3                          | 5.4.1                   |
@@ -153,8 +152,6 @@ If you use Kotlin, choose the appropriate version:
 
 | Gradle Plugin version | Required Kotlin version |
 | --------------------- | ----------------------- |
-| 4.6 - 4.8.1           | 1.2.51 - 1.3.50         |
-| 4.9 - 4.10            | 1.2.51+                 |
 | 4.10.1 - 5.1          | 1.3.0+                  |
 | 5.1.1 - 5.6.4         | 1.3.10+                 |
 | 6.0+                  | 1.3.20+                 |
