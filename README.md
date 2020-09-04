@@ -92,6 +92,7 @@ The latest version of the Android Pubguard Library is **1.0.0**
     // android
     implementation "androidx.core:core:1.3.1"
     implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
+    implementation 'androidx.webkit:webkit:1.2.0'
   
     // kotlin
     implementation "androidx.core:core-ktx:1.3.1"
