@@ -23,7 +23,7 @@ Table of contents
 * [Requirements](#requirements)
 * [Versioning](#versioning)
 * [License](#license)
-* [FAQs](https://github.com/pubguard/pubguard-library-guide/wiki/FAQs)
+<!--* [FAQs](https://github.com/bidstack-group/pubguardSDK/wiki/FAQs)-->
 
 <!--te-->
 
@@ -147,6 +147,19 @@ Note:
   - `BuildConfig.VERSION_NAME` is a `String` of your app version name that is set in module build.gradle
 
 
+import com.bidstack.pubguard.Pubguard;
+…
+
+public class MyApplication extends Application {
+
+    @Override public void onCreate() {
+        super.onCreate();
+
+        Pubguard.init(this, "YOUR_PUBGUARD_KEY_HERE");
+    }
+}
+```
+
 **Note** that we require `implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'`
 [GOOGLE_AD_VERSION] Version is based on your google ads version as per above. Even if you are not using Google ads, you still need to add support for Google services.
 
@@ -154,7 +167,6 @@ Note:
 
 | Aspectj plugin version | Required Android Gradle Plugin version | Required Gradle version |
 | ---------------------- | -------------------------------------- | ----------------------- |
-| 3.2.0.0                | 3.2.0 - 3.2.1                          | 4.6+                    |
 | 3.3.0.0                | 3.3.0 - 3.3.2                          | 4.10.1+                 |
 | 3.4.0.0                | 3.4.0 - 3.4.1                          | 5.1.1+                  |
 | 3.5.0.0                | 3.5.0 - 3.5.3                          | 5.4.1                   |
@@ -166,17 +178,100 @@ If you use Kotlin, choose the appropriate version:
 
 | Gradle Plugin version | Required Kotlin version |
 | --------------------- | ----------------------- |
-| 4.6 - 4.8.1           | 1.2.51 - 1.3.50         |
-| 4.9 - 4.10            | 1.2.51+                 |
 | 4.10.1 - 5.1          | 1.3.0+                  |
 | 5.1.1 - 5.6.4         | 1.3.10+                 |
 | 6.0+                  | 1.3.20+                 |
+
+
+
+### Installing locally
+
+* Copy `aspects.jar` into your project's root
+* Copy `pubguard.aar` into your main `app` module `libs` folder
+* Into project's `build.gradle`  add:
+
+  ```groovy
+  buildscript {
+      repositories {
+          flatDir {
+              dirs 'libs'
+          }
+      }
+      dependencies {
+          classpath files('aspectj.jar')
+          classpath "org.aspectj:aspectjtools:1.9.4"
+          classpath "org.aspectj:aspectjrt:1.9.4"
+      }
+  }
+  ```
+
+* Into module's `build.gradle` add:
+
+  ```groovy
+  dependencies {
+      implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
+      implementation fileTree(dir: 'libs', include: 'pubguard.aar')
+
+      implementation "androidx.core:core-ktx:1.2.0"
+      implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+      implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3'
+      implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
+
+      testImplementation 'junit:junit:4.12'
+      androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+      androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+      implementation('androidx.recyclerview:recyclerview:1.1.0') {
+          transitive = true
+      }
+      implementation('com.squareup.retrofit2:converter-gson:2.6.0') {
+          transitive = true
+      }
+      implementation('com.squareup.retrofit2:retrofit:2.6.0') {
+          transitive = true
+      }
+      implementation('com.squareup.retrofit2:retrofit-mock:2.5.0') {
+          transitive = true
+      }
+      implementation('com.google.code.gson:gson:2.8.5') {
+          transitive = true
+      }
+      implementation 'com.orhanobut:logger:2.1.1'
+      implementation 'com.squareup.okhttp3:logging-interceptor:4.1.0'
+      implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+      implementation 'commons-codec:commons-codec:1.13'
+  }
+  ```
+
+
+
+#### Initialising the Library
+
+The Pubguard Library should be initialised once at app launch, Here's an example of how to call the init method in
+Application class:
+```
+import com.bidstack.pubguard.Pubguard;
+…
+
+public class MyApplication extends Application {
+
+    @Override public void onCreate() {
+        super.onCreate();
+
+        Pubguard.init(this, "YOUR_PUBGUARD_KEY_HERE");
+    }
+}
+```
+
+#### Proguard
+
+If you are using Proguard please see our section on [using Pubguard with Proguard](drd-proguard-guide.md).
 
 ---
 
 # iOS
 
-The latest version of the iOS Pubguard Library is **1.28.0**
+The latest version of the iOS Pubguard Library is **1.0.0**
 
 ### Installing
 
@@ -374,4 +469,4 @@ Please use the most up to date version at all times to ensure maximum support.
 
 ## License
 
-*© 2017 Minimised Media Limited (Pubguard© 2017 All Rights Reserved)*
+*© 2019 Minimised Media Limited (Pubguard© 2019 All Rights Reserved)*
