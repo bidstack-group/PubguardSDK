@@ -48,88 +48,27 @@ The latest version of the Android Pubguard Library is **1.0.0**
 
 **Note: do not minify the Pubguard library**
 
-### Installing
-
-Installing the Pubguard library requires the following lines to be added to your gradle build as follows:
-
-#### Using Maven
-
-* Please add the folowing lines to your **build.gradle(Project level)** and update the credentials to use your key in 'password':
-```groovy
-    buildscript {
-        repositories {
-            maven {
-                // TODO: update url when publishing is set up
-                url 'https://customer.pubguard.com/maven/releases'
-                credentials {
-                    username 'pubguard'
-                    password 'YOUR_PUBGUARD_KEY_HERE'
-                }
-            }
-        }
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.0'
-        classpath 'com.bidstack.pubguard:aspectj:3.6.0'
-    }
-```
-
-* Please add the following lines to your **build.gradle(Module: app)**:
-
-```groovy
-apply plugin: 'com.bidstack.pubguard.aspectj-ext'
-
-dependencies {
-    implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
-    implementation 'com.bidstack.pubguard:pubguard:1.0.0'
-}
-
-```
-**Note** that we require `implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'`
-[GOOGLE_AD_VERSION] Version is based on your google ads version as per above. Even if you are not using Google ads, you still need to add support for Google services.
-
-**Note** If your project is using not the latest Gradle or Android Gradle Plugin versions, you should choose appropriate `com.bidstack.pubguard:aspectj` version form the table or update Gradle to the latest version
-
-| Aspectj plugin version | Required Android Gradle Plugin version | Required Gradle version |
-| ---------------------- | -------------------------------------- | ----------------------- |
-| 3.2.0.0                | 3.2.0 - 3.2.1                          | 4.6+                    |
-| 3.3.0.0                | 3.3.0 - 3.3.2                          | 4.10.1+                 |
-| 3.4.0.0                | 3.4.0 - 3.4.1                          | 5.1.1+                  |
-| 3.5.0.0                | 3.5.0 - 3.5.3                          | 5.4.1                   |
-| 3.6.0.0                | 3.6.0+                                 | 5.6.4                   |
-| 3.6.0.1                | 3.6.0+                                 | 6.0+                    |
-| 4.0.0.0                | 4.0.0+                                 | 6.1.1+                  |
-
-If you use Kotlin, choose the appropriate version:
-
-| Gradle Plugin version | Required Kotlin version |
-| --------------------- | ----------------------- |
-| 4.6 - 4.8.1           | 1.2.51 - 1.3.50         |
-| 4.9 - 4.10            | 1.2.51+                 |
-| 4.10.1 - 5.1          | 1.3.0+                  |
-| 5.1.1 - 5.6.4         | 1.3.10+                 |
-| 6.0+                  | 1.3.20+                 |
-
 
 
 ### Installing locally
 
-* Copy `aspects.jar` into your project's root
-* Copy `pubguard.aar` into your main `app` module `libs` folder
+* Copy pubguard.aar and aspectj.jar into your main app module libs folder
 * Into project's `build.gradle`  add:
 
   ```groovy
   buildscript {
-      repositories {
-          flatDir {
-              dirs 'libs'
-          }
-      }
       dependencies {
-          classpath files('aspectj.jar')
+          classpath files('app/libs/aspectj.jar')
           classpath "org.aspectj:aspectjtools:1.9.4"
           classpath "org.aspectj:aspectjrt:1.9.4"
       }
+  }
+  allprojects {
+    repositories {
+        flatDir {
+            dirs "libs"
+        }
+    }
   }
   ```
 
@@ -138,40 +77,43 @@ If you use Kotlin, choose the appropriate version:
   ```groovy
   apply plugin: 'com.bidstack.pubguard.aspectj-ext'
   
+  android {
+      compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+  }
+  
   dependencies {
-    implementation fileTree(dir: 'libs', include: 'pubguard.aar')
-
+    
+    // Pubguard
+    implementation files('libs/pubguard.aar')
+  
     // android
     implementation "androidx.core:core:1.3.1"
     implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'
-
-    // android
-    compileOnly 'androidx.recyclerview:recyclerview:1.1.0'
-    compileOnly 'androidx.constraintlayout:constraintlayout:1.1.3'
-
+  
     // kotlin
-    compileOnly "androidx.core:core-ktx:1.3.1"
-    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.core:core-ktx:1.3.1"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7'
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.3'
-
+  
     // networking
     implementation 'com.squareup.retrofit2:retrofit:2.6.3'
+    
+    // networking  converters
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.google.code.gson:gson:2.8.5'
     implementation ('com.squareup.retrofit2:converter-protobuf:2.6.3') {
         exclude group: 'com.google.protobuf', module: 'protobuf-java'
     }
     implementation 'com.google.protobuf:protobuf-lite:3.0.1'
-    implementation project(':protobuf')
-    // NOTE!!! Pubguard must use interceptor v3.12.2 in order to support android versions below api 21
+    // NOTE!!! We must use interceptor v3.12.2 in order to support android versions below api 21
     implementation 'com.squareup.okhttp3:logging-interceptor:3.12.2'
-
-    // test
-    testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
+  
     // other
-    compileOnly 'com.orhanobut:logger:2.1.1'
+    implementation 'com.orhanobut:logger:2.1.1'
   }
   ```
 
@@ -204,9 +146,31 @@ Note:
   - `YOUR_PUBGUARD_KEY` is a `String` of your publisher key that can be found in Pubguard console
   - `BuildConfig.VERSION_NAME` is a `String` of your app version name that is set in module build.gradle
 
-#### Proguard
 
-If you are using Proguard please see our section on [using Pubguard with Proguard](drd-proguard-guide.md).
+**Note** that we require `implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'`
+[GOOGLE_AD_VERSION] Version is based on your google ads version as per above. Even if you are not using Google ads, you still need to add support for Google services.
+
+**Note** If your project is using not the latest Gradle or Android Gradle Plugin versions, you should choose appropriate `com.bidstack.pubguard:aspectj` version form the table or update Gradle to the latest version
+
+| Aspectj plugin version | Required Android Gradle Plugin version | Required Gradle version |
+| ---------------------- | -------------------------------------- | ----------------------- |
+| 3.2.0.0                | 3.2.0 - 3.2.1                          | 4.6+                    |
+| 3.3.0.0                | 3.3.0 - 3.3.2                          | 4.10.1+                 |
+| 3.4.0.0                | 3.4.0 - 3.4.1                          | 5.1.1+                  |
+| 3.5.0.0                | 3.5.0 - 3.5.3                          | 5.4.1                   |
+| 3.6.0.0                | 3.6.0+                                 | 5.6.4                   |
+| 3.6.0.1                | 3.6.0+                                 | 6.0+                    |
+| 4.0.0.0                | 4.0.0+                                 | 6.1.1+                  |
+
+If you use Kotlin, choose the appropriate version:
+
+| Gradle Plugin version | Required Kotlin version |
+| --------------------- | ----------------------- |
+| 4.6 - 4.8.1           | 1.2.51 - 1.3.50         |
+| 4.9 - 4.10            | 1.2.51+                 |
+| 4.10.1 - 5.1          | 1.3.0+                  |
+| 5.1.1 - 5.6.4         | 1.3.10+                 |
+| 6.0+                  | 1.3.20+                 |
 
 ---
 
