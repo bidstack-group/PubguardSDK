@@ -106,10 +106,8 @@ The latest version of the Android Pubguard Library is **1.0.0**
     // networking  converters
     implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
     implementation 'com.google.code.gson:gson:2.8.5'
-    implementation ('com.squareup.retrofit2:converter-protobuf:2.6.3') {
-        exclude group: 'com.google.protobuf', module: 'protobuf-java'
-    }
-    implementation 'com.google.protobuf:protobuf-lite:3.0.1'
+    implementation 'com.squareup.retrofit2:converter-protobuf:2.6.3'
+    implementation 'com.google.protobuf:protobuf-java:3.6.1'
     // NOTE!!! We must use interceptor v3.12.2 in order to support android versions below api 21
     implementation 'com.squareup.okhttp3:logging-interceptor:3.12.2'
   
