@@ -304,9 +304,7 @@ Here is a guide based based on our compiling with our test apps, please bear in 
 
 |Dependancies| iOS   | Android |
 | ---- | ----- | ------- |
-|gson | | ~50kb  |
-|retrofit | | ~150kb  |
-| Total |~140kb | ~900kb  |
+| Total |~140kb | ~358kb  |
 
 ---
 
@@ -318,23 +316,24 @@ These are SDKs designed specifically for serving advertising content into your a
 
 | SDK     | iOS   | Android |
 | ------- | ----- | ------- |
-| AdColony   | 4.1.4|  4.1.0+  |
+| AdColony   | 4.1.4|  4.1.0 - 4.1.4  |
+| Amazon |  | 6.0.0 |
 | AppNexusSDK | 7.2 |    |
-| FBAudienceNetwork | 5.8.0 | 5.7.1 |
-| Firebase/AdMob | 6.3.0 |  19.0.0 |
-| Mopub mediation AdMob |  | 15.0.0.8 |
+| FBAudienceNetwork | 5.8.0 | 5.11.0 |
+| Firebase/AdMob | 6.3.0 |  19.0.0 - 19.3.0 |
+| Mopub mediation AdMob |  |  |
 | Google-Mobile-Ads-SDK | 7.57.0  | 19.0.0 |
 | InMobiSDK | 9.0.6 | 9.0.1 |
-| IronSourceSDK | 6.15.0.1 |  |
+| IronSourceSDK | 6.15.0.1 | 6.14.0.1; 6.16.1 |
 | AOL one (MMAdSDK) | 6.8.2|  |
-| MoPub | 5.11.0 | 5.10.0 |
+| MoPub | 5.11.0 | 5.10.0, 5.12.0 |
 | OpenX | 4.8.1 | |
 | RFMAdSDK | 6.4.0| |
 | Tapjoy | 12.4.2 | |
-| Unity Ads | 3.4.2 | 3.4.2 |
-| Mopub mediation Unity |  | 3.2.0.1 |
-| Verizon | 1.5.0 | 1.3.1 |
-| Vungle | 6.5.3 | |
+| Unity Ads | 3.4.2 | 3.4.2-3.4.6 |
+| Mopub mediation Unity |  | 3.4.6.0 |
+| Verizon | 1.5.0 | 1.2.0 |
+| Vungle | 6.5.3 | 6.7.0 |
 
 ### Mediation Support
 
@@ -343,9 +342,9 @@ Mediation platforms or networks can be used to manage the various SDKs within yo
 | Mediator     | iOS   | Android |
 | ------- | ----- | ------- |
 | AATKit (addApptr)   | 2.65.34|    |
-| DFP   | 7.31.0 | 15.0.0 |
-| AppNexusSDK | 7.2 |  4.8  |
-| MoPub | 5.11.0 | 5.1.0 |
+| DFP   | 7.31.0 |  |
+| AppNexusSDK | 7.2 |    |
+| MoPub | 5.11.0 | 5.10.0, 5.12.0 |
 
 ## Requirements
 
