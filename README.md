@@ -319,7 +319,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | AdColony   | 4.1.4|  4.1.0 - 4.1.4  |
 | Amazon |  | 6.0.0 |
 | AppNexusSDK | 7.2 |    |
-| FBAudienceNetwork | 5.8.0 | 5.11.0 |
+| FBAudienceNetwork | 5.8.0 | 5.8.0 - 6.0.0 |
 | Firebase/AdMob | 6.3.0 |  19.0.0 - 19.3.0 |
 | Mopub mediation AdMob |  |  |
 | Google-Mobile-Ads-SDK | 7.57.0  | 19.0.0 |
@@ -334,6 +334,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | Mopub mediation Unity |  | 3.4.6.0 |
 | Verizon | 1.5.0 | 1.2.0 |
 | Vungle | 6.5.3 | 6.7.0 |
+| Chartboost | | 7.5.0; 8.1.0 |
 
 ### Mediation Support
 
