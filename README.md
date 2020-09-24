@@ -110,9 +110,7 @@ The latest version of the Android Pubguard Library is **1.0.0**
     implementation 'com.google.protobuf:protobuf-java:3.6.1'
     // NOTE!!! We must use interceptor v3.12.2 in order to support android versions below api 21
     implementation 'com.squareup.okhttp3:logging-interceptor:3.12.2'
-  
-    // other
-    implementation 'com.orhanobut:logger:2.1.1'
+    
   }
   ```
   
