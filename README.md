@@ -323,7 +323,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | InMobiSDK | 9.0.6 | 9.0.1 |
 | IronSourceSDK | 6.15.0.1 | 6.14.0.1; 6.16.1 |
 | AOL one (MMAdSDK) | 6.8.2|  |
-| MoPub | 5.11.0 | 5.10.0, 5.12.0 |
+| MoPub | 5.14.0 | 5.10.0, 5.12.0 |
 | OpenX | 4.8.1 | |
 | RFMAdSDK | 6.4.0| |
 | Tapjoy | 12.4.2 | |
@@ -348,8 +348,8 @@ Mediation platforms or networks can be used to manage the various SDKs within yo
 
 ### iOS Requirements
 
-+ iOS 8.0 and up
-+ Xcode 9.0 and up
++ iOS 9.0 and up
++ Xcode 11.0 and up
 
 ### Android Requirements
 
