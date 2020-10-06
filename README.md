@@ -216,8 +216,9 @@ The Pubguard Library should be initialised once at app launch, Here's an example
 The Pubguard Library is written in Obj-c so if your app is Swift please see the guide on adding a [bridging header](adding-a-bridging-header.md).
 
 ```
-*Example AppDelegate.m (excerpt)*
+*Example AppDelegate.swift*
 
+import UIKit
 import Pubguard
 …
 
@@ -227,10 +228,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
         func application(_ application: UIApplication,
-        didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+                         didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         // Initialize the Pubguard Library.
-        Pubguard.initiateTrackerWithKey("YOUR_PUBGUARD_KEY_HERE")
+        Pubguard.initiateTracker(withKey: "YOUR_PUBGUARD_KEY_HERE")
 
         return true
     }
