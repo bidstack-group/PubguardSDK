@@ -17,6 +17,7 @@ Table of contents
 * [Table of contents](#table-of-contents)
 * [Android](#android)
 * [iOS](#ios)
+* [Unity Plugin](#Unity-Plugin)
 * [Change Log](#change-log)
 * [Library Size](#library-size)
 * [SDK support](#support)
@@ -114,6 +115,7 @@ The latest version of the Android Pubguard Library is **1.0.0**
   }
   ```
   
+
 **Note** that we require `implementation 'com.google.android.gms:play-services-basement:[GOOGLE_AD_VERSION]'`
 [GOOGLE_AD_VERSION] Version is based on your google ads version as per above. Even if you are not using Google ads, you still need to add support for Google services.
 
@@ -186,7 +188,35 @@ Then run "pod install --repo-update"
 
 #### Adding the library manually
 
-If you are adding the library manually please refer to these [instructions](ios-manual-install.md).
+Please request the Pubguard Library from support@pubguard.com which will have the key embedded in it.
+
+Once received copy the Pubguard.framework into your Xcode project and add it to all targets that will link to Pubguard:
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/add.png)
+
+Add the Pubguard Library to Target > General > Embedded Binaries. If you add the framework to "embedded binaries", the framework will also be added to "Linked Frameworks and Libraries".
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/link.png)
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/build-phase.png)
+
+Download file [strip-frameworks.sh](strip-frameworks.sh) and put this file in root folder of your project.
+
+In Project Navigator choose your project and go to "Build Phases" and in the top left corner find and press "add" button. Hit "New Run Script Phase" and choose new "Run Script".
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/select-build-script.png)
+
+Add the following Build script
+
+```
+bash "${SRCROOT}/${PROJECT_NAME}/strip-frameworks.sh"
+```
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/add-build-script.png)
+
+Also in "Build Phases" add Pubguard framework in "Embed Frameworks".
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/add-embed-frameworks.png)
 
 
 #### Unity installation
@@ -205,7 +235,7 @@ Then run "pod install --repo-update"
 
 ##### manual (Unity)
 
-Manual installation is the same [instructions](ios-manual-install.md).
+Manual installation is the same [instructions](#Adding the library manually).
 
 ### Initialising the Library
 
@@ -213,9 +243,9 @@ The Pubguard Library should be initialised once at app launch, Here's an example
 
 #### Swift
 
-The Pubguard Library is written in Obj-c so if your app is Swift please see the guide on adding a [bridging header](adding-a-bridging-header.md).
+The Pubguard Library is written in Obj-c so if your app is Swift please see the guide on adding a [bridging header](#Bridging Header).
 
-```
+```swift
 *Example AppDelegate.swift*
 
 import UIKit
@@ -241,7 +271,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 #### Objective-C
 
-```
+```objective-c
 *Example AppDelegate.m (excerpt)*
 
 #import "Pubguard/Pubguard.h"
@@ -260,12 +290,39 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 @end
 ```
 
+#### Bridging Header
+
+This is a quick guide explaining how to add a bridging header if you have built your app in Swift and are using the Pubguard Library.
+
+Create a new file in your project:
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/new-file.png)
+
+Select 'header file' and name it Pubguard-Bridging-Header
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/add-header.png)
+
+### Update your Bridging Header File
+
+Add **#import 'Pubguard/Pubguard.h'** to new header file, this will allow you to import the Pubguard Library in your Swift app
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/header-file.png)
+
+### Update your Build Settings to include the Bridging Header
+
+In **Project Settings -> Build Settings** search for *"Swift Compiler - Code Generation"*  add the Bridging header to the line *Objective-C Bridging Header*
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/build-settings.png)
+
+### That's it! You should now be able to access the library as normal:
+
+![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/example-init.png)
 
 #### Unity
 
 As was mentioned earlier, pubguard installation and initialization must be in Xcode project, which you get after building Unity project for iOS platform. In this project find **UnityAppController.mm** file and find **application didFinishLaunchingWithOptions** function. Add ```[Pubguard initiateTrackerWithKey:@"YOUR_PUBGUARD_KEY_HERE"];```.
 
-```
+```objective-c
 *Example UnityAppController.mm (excerpt)*
 
 #import <Pubguard/Pubguard.h>
@@ -283,6 +340,12 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 @end
 ```
+
+
+
+## Unity Plugin
+
+
 
 ---
 
