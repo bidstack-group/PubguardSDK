@@ -192,19 +192,19 @@ Please request the Pubguard Library from support@pubguard.com which will have th
 
 Once received copy the Pubguard.framework into your Xcode project and add it to all targets that will link to Pubguard:
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/add.png)
+![alt text](imgs/add.png)
 
 Add the Pubguard Library to Target > General > Embedded Binaries. If you add the framework to "embedded binaries", the framework will also be added to "Linked Frameworks and Libraries".
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/link.png)
+![alt text](imgs/link.png)
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/build-phase.png)
+![alt text](imgs/build-phase.png)
 
 Download file [strip-frameworks.sh](strip-frameworks.sh) and put this file in root folder of your project.
 
 In Project Navigator choose your project and go to "Build Phases" and in the top left corner find and press "add" button. Hit "New Run Script Phase" and choose new "Run Script".
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/select-build-script.png)
+![alt text](imgs/select-build-script.png)
 
 Add the following Build script
 
@@ -212,11 +212,11 @@ Add the following Build script
 bash "${SRCROOT}/${PROJECT_NAME}/strip-frameworks.sh"
 ```
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/add-build-script.png)
+![alt text](imgs/add-build-script.png)
 
 Also in "Build Phases" add Pubguard framework in "Embed Frameworks".
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/add-embed-frameworks.png)
+![alt text](imgs/add-embed-frameworks.png)
 
 
 #### Unity installation
@@ -296,27 +296,27 @@ This is a quick guide explaining how to add a bridging header if you have built 
 
 Create a new file in your project:
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/new-file.png)
+![alt text](imgs/new-file.png)
 
 Select 'header file' and name it Pubguard-Bridging-Header
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/add-header.png)
+![alt text](imgs/add-header.png)
 
 ### Update your Bridging Header File
 
 Add **#import 'Pubguard/Pubguard.h'** to new header file, this will allow you to import the Pubguard Library in your Swift app
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/header-file.png)
+![alt text](imgs/header-file.png)
 
 ### Update your Build Settings to include the Bridging Header
 
 In **Project Settings -> Build Settings** search for *"Swift Compiler - Code Generation"*  add the Bridging header to the line *Objective-C Bridging Header*
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/build-settings.png)
+![alt text](imgs/build-settings.png)
 
 ### That's it! You should now be able to access the library as normal:
 
-![alt text](/Users/alex/Projects/Pubguard/PubguardSDK/imgs/example-init.png)
+![alt text](imgs/example-init.png)
 
 #### Unity
 
