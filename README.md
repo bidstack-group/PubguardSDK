@@ -415,7 +415,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | Unity Ads | 3.4.2 | 3.4.2-3.4.6 |
 | Mopub mediation Unity |  | 3.4.6.0 |
 | Verizon | 1.5.0 | 1.2.0 |
-| Vungle | 6.5.3 | 6.7.0 |
+| Vungle | 6.5.3 | 6.7.0 - 6.8.1 |
 | Chartboost | | 7.5.0; 8.1.0 |
 
 ### Mediation Support
