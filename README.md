@@ -401,7 +401,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | AdColony   | 4.1.4|  4.1.0 - 4.1.4  |
 | Amazon |  | 6.0.0 |
 | AppNexusSDK | 7.2 |    |
-| FBAudienceNetwork | 5.8.0 | 5.8.0 - 6.0.0 |
+| FBAudienceNetwork | 5.8.0 | 5.8.0 - 6.1.0 |
 | Firebase/AdMob | 6.3.0 | 19.0.0 - 19.4.0 |
 | Mopub mediation AdMob |  |  |
 | Google-Mobile-Ads-SDK | 7.57.0  | 19.0.0 |
