@@ -396,26 +396,26 @@ Here is a guide based based on our compiling with our test apps, please bear in 
 
 These are SDKs designed specifically for serving advertising content into your app, if you would like information on a version or vendor that is not on this list please email support@pubguard.com
 
-| SDK     | iOS   | Android |
+| Company/Product | iOS SDK identifier | iOS versions | Android versions |
 | ------- | ----- | ------- |
-| AdColony   | 4.1.4|  4.1.0 - 4.1.4  |
-| AdMob (Google-Mobile-Ads-SDK) | 7.57.0 | 19.0.0 - 19.4.0 |
-| Amazon |  | 6.0.0 |
-| AppNexusSDK | 7.2 |    |
-| Chartboost | | 7.5.0; 8.1.0 |
-| FBAudienceNetwork | 5.8.0 | 5.8.0 - 6.0.0 |
-| InMobiSDK | 9.0.6 | 9.0.1 |
-| IronSourceSDK | 6.15.0.1 | 6.14.0.1; 6.16.1 |
-| MoPub | 5.14.0 | 5.10.0, 5.12.0 |
-| MoPub mediation - AdMob |  |  |
-| MoPub mediation - Unity |  | 3.4.6.0 |
-| One by AOL (MMAdSDK) | 6.8.2|  |
-| OpenX | 4.8.1 | |
-| RFMAdSDK | 6.4.0| |
-| Tapjoy | 12.4.2 | |
-| Unity Ads | 3.4.2 | 3.4.2-3.4.6, 3.4.8 |
-| Verizon | 1.5.0 | 1.2.0 |
-| Vungle | 6.5.3 | 6.7.0 - 6.8.1 |
+| AdColony | | 4.1.4|  4.1.0 - 4.1.4  |
+| AdMob | Google-Mobile-Ads-SDK | 7.57.0 | 19.0.0 - 19.4.0 |
+| Amazon Mobile Ads | |  | 6.0.0 |
+| AppNexus | AppNexusSDK | 7.2 |    |
+| Chartboost | | | 7.5.0; 8.1.0 |
+| Facebook Audience Network | FBAudienceNetwork | 5.8.0 | 5.8.0 - 6.0.0 |
+| InMobi | InMobiSDK | 9.0.6 | 9.0.1 |
+| ironSource | IronSourceSDK | 6.15.0.1 | 6.14.0.1; 6.16.1 |
+| MoPub |  | 5.14.0 | 5.10.0, 5.12.0 |
+| MoPub mediation - AdMob | |  |  |
+| MoPub mediation - Unity | |  | 3.4.6.0 |
+| One by AOL | MMAdSDK | 6.8.2|  |
+| OpenX | | 4.8.1 | |
+| Rubicon Project | RFMAdSDK | 6.4.0| |
+| Tapjoy | | 12.4.2 | |
+| Unity Ads | | 3.4.2 | 3.4.2-3.4.6, 3.4.8 |
+| Verizon | | 1.5.0 | 1.2.0 |
+| Vungle | | 6.5.3 | 6.7.0 - 6.8.1 |
 
 ### Mediation Support
 
