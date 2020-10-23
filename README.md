@@ -402,12 +402,11 @@ These are SDKs designed specifically for serving advertising content into your a
 | Amazon |  | 6.0.0 |
 | AppNexusSDK | 7.2 |    |
 | FBAudienceNetwork | 5.8.0 | 5.8.0 - 6.0.0 |
-| Firebase/AdMob | 6.3.0 | 19.0.0 - 19.4.0 |
+| AdMob (Google-Mobile-Ads-SDK) | 7.57.0 | 19.0.0 - 19.4.0 |
 | Mopub mediation AdMob |  |  |
-| Google-Mobile-Ads-SDK | 7.57.0  | 19.0.0 |
 | InMobiSDK | 9.0.6 | 9.0.1 |
 | IronSourceSDK | 6.15.0.1 | 6.14.0.1; 6.16.1 |
-| AOL one (MMAdSDK) | 6.8.2|  |
+| One by AOL (MMAdSDK) | 6.8.2|  |
 | MoPub | 5.14.0 | 5.10.0, 5.12.0 |
 | OpenX | 4.8.1 | |
 | RFMAdSDK | 6.4.0| |
