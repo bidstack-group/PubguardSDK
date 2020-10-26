@@ -399,7 +399,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | Company/Product | iOS SDK identifier | iOS versions | Android SDK identifier | Android versions |
 | ------- | ----- | ------- | ------- | ------- |
 | AdColony | | 4.1.4| com.adcolony:sdk |  4.1.0 - 4.1.4  |
-| AdMob | Google-Mobile-Ads-SDK | 7.57.0 | com.google.android.gms:play-services-ads | 19.0.0 - 19.4.0 |
+| AdMob | Google-Mobile-Ads-SDK | 7.57.0 | com.google.android.gms:play-services-ads | 19.0.0 - 19.5.0 |
 | Amazon Mobile Ads | |  | com.amazon.android:mobile-ads | 6.0.0 |
 | AppNexus | AppNexusSDK | 7.2 |  |    |
 | Chartboost | | | com.chartboost:chartboost-sdk | 7.5.0; 8.1.0 |
