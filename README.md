@@ -405,7 +405,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | Chartboost | | | com.chartboost:chartboost-sdk | 7.5.0; 8.1.0 |
 | Facebook Audience Network | FBAudienceNetwork | 5.8.0 | com.facebook.android:audience-network-sdk | 5.8.0 - 6.1.0 |
 | InMobi | InMobiSDK | 9.0.6 | com.inmobi.monetization:inmobi-ads | 9.0.1; 9.1.0 |
-| ironSource | IronSourceSDK | 6.15.0.1 | com.ironsource.sdk:mediationsdk | 6.14.0.1; 6.16.1 |
+| ironSource | IronSourceSDK | 6.15.0.1 | com.ironsource.sdk:mediationsdk | 6.14.0.1; 6.16.1; 6.18.0 - 7.0.3 |
 | MoPub |  | 5.14.0 | com.mopub:mopub-sdk | 5.10.0, 5.12.0 |
 | MoPub mediation - AdMob | |  | com.mopub.mediation:admob |  |
 | MoPub mediation - Unity | |  | com.mopub.mediation:unityads | 3.4.6.0 |
