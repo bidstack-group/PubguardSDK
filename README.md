@@ -405,13 +405,14 @@ These are SDKs designed specifically for serving advertising content into your a
 | Chartboost | | | com.chartboost:chartboost-sdk | 7.5.0; 8.1.0 |
 | Facebook Audience Network | FBAudienceNetwork | 5.8.0 | com.facebook.android:audience-network-sdk | 5.8.0 - 6.1.0 |
 | InMobi | InMobiSDK | 9.0.6 | com.inmobi.monetization:inmobi-ads | 9.0.1; 9.1.0 |
-| ironSource | IronSourceSDK | 6.15.0.1 | com.ironsource.sdk:mediationsdk | 6.14.0.1; 6.16.1; 6.18.0 - 7.0.3 |
+| IronSource | IronSourceSDK | 6.15.0.1 | com.ironsource.sdk:mediationsdk | 6.14.0.1; 6.16.1; 6.18.0 - 7.0.3 |
 | MoPub |  | 5.14.0 | com.mopub:mopub-sdk | 5.10.0, 5.12.0 |
 | MoPub mediation - AdMob | |  | com.mopub.mediation:admob |  |
 | MoPub mediation - Unity | |  | com.mopub.mediation:unityads | 3.4.6.0 |
 | One by AOL | MMAdSDK | 6.8.2| |  |
 | OpenX | | 4.8.1 |  | |
 | Rubicon Project | RFMAdSDK | 6.4.0| | |
+| Smaato | | | com.smaato.android.sdk:smaato-sdk | 21.5.3 |
 | Tapjoy | | 12.4.2 |  | |
 | Unity Ads | | 3.4.2 | com.unity3d.ads:unity-ads | 3.4.2 - 3.5.0 |
 | Verizon | | 1.5.0 | com.verizon.ads:android-vas-standard-edition | 1.2.0 |
