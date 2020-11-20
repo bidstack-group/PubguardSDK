@@ -413,6 +413,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | One by AOL | MMAdSDK | 6.8.2| |  |
 | OpenX | | 4.8.1 |  | |
 | Rubicon Project | RFMAdSDK | 6.4.0| | |
+| Smaato | | | com.smaato.android.sdk:smaato-sdk | 21.5.3 |
 | Tapjoy | | 12.4.2 |  | |
 | Unity Ads | | 3.4.2 | com.unity3d.ads:unity-ads | 3.4.2 - 3.5.0 |
 | Verizon | | 1.5.0 | com.verizon.ads:android-vas-standard-edition | 1.2.0; 1.8.0 |
