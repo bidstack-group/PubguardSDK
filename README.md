@@ -401,6 +401,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | AdColony | | 4.1.4| com.adcolony:sdk |  4.1.0 - 4.3.0  |
 | AdMob | Google-Mobile-Ads-SDK | 7.57.0 | com.google.android.gms:play-services-ads | 19.0.0 - 19.5.0 |
 | Amazon Mobile Ads | |  | com.amazon.android:mobile-ads | 6.0.0 |
+| AppLovin | | | com.applovin:applovin-sdk | 9.14.4 - 9.14.5 |
 | AppNexus | AppNexusSDK | 7.2 |  |    |
 | Chartboost | | | com.chartboost:chartboost-sdk | 7.5.0; 8.1.0 |
 | Facebook Audience Network | FBAudienceNetwork | 5.8.0 | com.facebook.android:audience-network-sdk | 5.8.0 - 6.1.0 |
