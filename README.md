@@ -415,7 +415,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | Rubicon Project | RFMAdSDK | 6.4.0| | |
 | Tapjoy | | 12.4.2 |  | |
 | Unity Ads | | 3.4.2 | com.unity3d.ads:unity-ads | 3.4.2 - 3.5.0 |
-| Verizon | | 1.5.0 | com.verizon.ads:android-vas-standard-edition | 1.2.0 |
+| Verizon | | 1.5.0 | com.verizon.ads:android-vas-standard-edition | 1.2.0; 1.8.0 |
 | Vungle | | 6.5.3 | com.vungle:publisher-sdk-android | 6.7.0 - 6.8.1 |
 
 ### Mediation Support
