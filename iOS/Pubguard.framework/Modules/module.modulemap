@@ -4,3 +4,8 @@ framework module Pubguard {
   export *
   module * { export * }
 }
+
+module Pubguard.Swift {
+    header "Pubguard-Swift.h"
+    requires objc
+}
