@@ -1,0 +1,193 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-module-flags: -target armv7-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Pubguard
+import AVFoundation
+import AdSupport
+import CoreTelephony
+import Foundation
+@_exported import Pubguard
+import Swift
+import SwiftProtobuf
+import SystemConfiguration
+import UIKit
+import WebKit
+@_hasMissingDesignatedInitializers final public class PGSystemInfo {
+  @objc final public class var osVersion: Swift.String {
+    @objc get
+  }
+  @objc final public class var appVersion: Swift.String {
+    @objc get
+  }
+  @objc final public class var bundleIdentifier: Swift.String {
+    @objc get
+  }
+  @objc final public class var connectionType: Swift.String {
+    @objc get
+  }
+  @objc final public class var carrierName: Swift.String {
+    @objc get
+  }
+  @objc final public class var pubguardVersion: Swift.String {
+    @objc get
+  }
+  @objc final public class var deviceName: Swift.String {
+    @objc get
+  }
+  @objc final public class var idfa: Swift.String {
+    @objc get
+  }
+  @objc deinit
+}
+extension UIColor {
+  convenience public init?(hex: Swift.String)
+}
+@objc @_inheritsConvenienceInitializers final public class PGAdsHandler : ObjectiveC.NSObject {
+  @objc public static let shared: Pubguard.PGAdsHandler
+  @objc final public func handleImpression(usingView view: UIKit.UIView?, metadata: Swift.Dictionary<Swift.String, Any>)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc public enum PGADNetworksBridge : Swift.Int {
+  case Admob
+  case DFP
+  case Unity
+  case Inmobi
+  case Verizon
+  case AdColony
+  case OpenX
+  case Vungle
+  case Tapjoy
+  case FAN
+  case Amazon
+  case Smaato
+  case AppLovin
+  case Verve
+  case Teads
+  case IronSource
+  case SpotX
+  case Taboola
+  case MoPub
+  case AOL
+  case AppNexus
+  case Chartboost
+  public typealias RawValue = Swift.Int
+  public init?(rawValue: Swift.Int)
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum PGADNetworks : Swift.String {
+  case unknown
+  case Admob
+  case DFP
+  case Unity
+  case Inmobi
+  case Verizon
+  case AdColony
+  case OpenX
+  case Vungle
+  case Tapjoy
+  case FAN
+  case Amazon
+  case Smaato
+  case AppLovin
+  case Verve
+  case Teads
+  case IronSource
+  case SpotX
+  case Taboola
+  case MoPub
+  case AOL
+  case AppNexus
+  case Chartboost
+  public typealias RawValue = Swift.String
+  public init?(rawValue: Swift.String)
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension PGReportingManager {
+  final public func register(webView view: UIKit.UIView?, metadata: Swift.Dictionary<Swift.String, Any>, handlerID: Foundation.UUID)
+}
+@_hasMissingDesignatedInitializers @objc public class AdNetworkInfo : ObjectiveC.NSObject {
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_hasMissingDesignatedInitializers @objc public class PGAdNetworkReportData : Pubguard.PGReportDataBase {
+  @objc deinit
+  @objc override dynamic public init()
+}
+extension PGReportingManager {
+  @objc final public func add(adNetwork name: Swift.String, version: Swift.String)
+  @objc final public func registerAdNetworks()
+}
+public enum PGAction {
+  case impressionBlockAd
+  case impressionPassAd
+  case bypass
+  public static func == (a: Pubguard.PGAction, b: Pubguard.PGAction) -> Swift.Bool
+  public var hashValue: Swift.Int {
+    get
+  }
+  public func hash(into hasher: inout Swift.Hasher)
+}
+public typealias PGCallToAction = Swift.Bool
+public typealias PGAPICompletionHandler = ((Pubguard.PGAction, Swift.Error?) -> Swift.Void)
+@objc @_inheritsConvenienceInitializers final public class PubguardAPI : ObjectiveC.NSObject {
+  @objc public static let shared: Pubguard.PubguardAPI
+  @objc final public var overlayColor: UIKit.UIColor? {
+    @objc get
+  }
+  @objc final public var overlayImage: UIKit.UIImage? {
+    @objc get
+  }
+  @objc final public var authKey: Swift.String
+  @objc final public func activateProtection(withCompletionHandler completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc final public func isEnabled(adNetwork network: Pubguard.PGADNetworksBridge) -> Swift.Bool
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension PubguardAPI {
+  final public func report(collectedData data: Pubguard.PGReportDataBase, completionHandler completion: @escaping Pubguard.PGAPICompletionHandler)
+}
+@objc @_inheritsConvenienceInitializers public class PGClassKey : ObjectiveC.NSObject {
+  @objc public static let metaClassKey: Swift.String
+  @objc public static let customScreenshotKey: Swift.String
+  @objc public static let customViewForScreenshotKey: Swift.String
+  @objc public static let videoURLSKey: Swift.String
+  @objc public static let imageURLSKey: Swift.String
+  @objc public static let redirectUrlKey: Swift.String
+  @objc public static let supportViewKey: Swift.String
+  @objc public static let contentHtmlKey: Swift.String
+  @objc public static let videoPlayerKey: Swift.String
+  @objc public static let viewControllerKey: Swift.String
+  @objc deinit
+  @objc override dynamic public init()
+}
+@objc @_inheritsConvenienceInitializers public class PGReportDataBase : ObjectiveC.NSObject, Swift.Codable {
+  @objc override dynamic public init()
+  required public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers final public class PGReportingManager : ObjectiveC.NSObject {
+  @objc public static let shared: Pubguard.PGReportingManager
+  @objc final public func shutdown()
+  @objc final public func initializeRunTime()
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol PGImpressionMetaclassProtocol : AnyObject {
+  @objc func getAdNetworkVersion() -> Swift.String
+  @objc func getAdNetworkName() -> Swift.String
+  @objc func getAdNetworkAdFormat() -> Swift.String
+  @objc optional func getAlternativeViewForScreenshot(fromView view: UIKit.UIView) -> UIKit.UIView?
+}
+extension Pubguard.PGADNetworksBridge : Swift.Equatable {}
+extension Pubguard.PGADNetworksBridge : Swift.Hashable {}
+extension Pubguard.PGADNetworksBridge : Swift.RawRepresentable {}
+extension Pubguard.PGADNetworks : Swift.Equatable {}
+extension Pubguard.PGADNetworks : Swift.Hashable {}
+extension Pubguard.PGADNetworks : Swift.RawRepresentable {}
+extension Pubguard.PGAction : Swift.Equatable {}
+extension Pubguard.PGAction : Swift.Hashable {}
