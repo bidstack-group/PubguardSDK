@@ -405,6 +405,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | AppNexus | AppNexusSDK | 7.2 |  |    |
 | Chartboost | | | com.chartboost:chartboost-sdk | 7.5.0; 8.1.0 |
 | Facebook Audience Network | FBAudienceNetwork | 5.8.0 | com.facebook.android:audience-network-sdk | 5.8.0 - 6.1.0 |
+| Fyber Marketplace |  |  | com.fyber.vamp:core-sdk/:video-kit/:mraid-kit | 7.7.2 |
 | InMobi | InMobiSDK | 9.0.6 | com.inmobi.monetization:inmobi-ads | 9.0.1; 9.1.0 |
 | ironSource | IronSourceSDK | 6.15.0.1 | com.ironsource.sdk:mediationsdk | 6.14.0.1; 6.16.1; 6.18.0 - 7.0.3 |
 | MoPub |  | 5.14.0 | com.mopub:mopub-sdk | 5.14.0 |
