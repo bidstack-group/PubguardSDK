@@ -47,6 +47,8 @@ pubguardKey = "xxxxxxxxxxxxxxxxxxx"
 
 The latest version of the Android Pubguard Library is **1.0.0**
 
+Pubguard supports Android Gradle Plugin 3.4.0 - 4.1.1 and Gradle Wrapper 5.6 - 6.8
+
 **Note: do not minify the Pubguard library**
 
 
@@ -62,6 +64,7 @@ The latest version of the Android Pubguard Library is **1.0.0**
           classpath files('app/libs/aspectj.jar')
           classpath "org.aspectj:aspectjtools:1.9.4"
           classpath "org.aspectj:aspectjrt:1.9.4"
+          classpath "org.javassist:javassist:3.27.0-GA"
       }
   }
   allprojects {
@@ -147,24 +150,7 @@ public class MyApplication extends Application {
   - `YOUR_PUBGUARD_KEY` is a `String` of your publisher key that can be found in Pubguard console
   - `BuildConfig.VERSION_NAME` is a `String` of your app version name that is set in module build.gradle
 
-If your project is using not the latest Gradle or Android Gradle Plugin versions, you should choose appropriate `com.bidstack.pubguard:aspectj` version form the table or update Gradle to the latest version
 
-| Aspectj plugin version | Required Android Gradle Plugin version | Required Gradle version |
-| ---------------------- | -------------------------------------- | ----------------------- |
-| 3.3.0.0                | 3.3.0 - 3.3.2                          | 4.10.1+                 |
-| 3.4.0.0                | 3.4.0 - 3.4.1                          | 5.1.1+                  |
-| 3.5.0.0                | 3.5.0 - 3.5.3                          | 5.4.1                   |
-| 3.6.0.0                | 3.6.0+                                 | 5.6.4                   |
-| 3.6.0.1                | 3.6.0+                                 | 6.0+                    |
-| 4.0.0.0                | 4.0.0+                                 | 6.1.1+                  |
-
-If you use Kotlin, choose the appropriate version:
-
-| Gradle Plugin version | Required Kotlin version |
-| --------------------- | ----------------------- |
-| 4.10.1 - 5.1          | 1.3.0+                  |
-| 5.1.1 - 5.6.4         | 1.3.10+                 |
-| 6.0+                  | 1.3.20+                 |
 
 ---
 
