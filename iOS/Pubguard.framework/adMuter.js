@@ -1,9 +1,13 @@
 "use strict";
 
-const MAX_RETRIES = 5
-const RETRY_INTERVAL = 1000
+//const MAX_RETRIES = 5
+//const RETRY_INTERVAL = 1000
 
-class AdMuter {
+var AdMuter = class AdMuter {
+    
+    MAX_RETRIES = 5;
+    RETRY_INTERVAL = 1000;
+    
     interval;
     adMuted = false;
 
@@ -11,7 +15,7 @@ class AdMuter {
 
         let tries = 0;
         this.interval = setInterval(() => {
-            if (this.adMuted || tries === MAX_RETRIES) {
+            if (this.adMuted || tries === this.MAX_RETRIES) {
                 clearInterval(this.interval);
                 return;
             }
@@ -21,7 +25,7 @@ class AdMuter {
                 globalThis.AudioBufferSourceNode.prototype.start = (function() {return null})
             }
             this.muteAds();
-        }, RETRY_INTERVAL);
+        }, this.RETRY_INTERVAL);
 
     }
 
