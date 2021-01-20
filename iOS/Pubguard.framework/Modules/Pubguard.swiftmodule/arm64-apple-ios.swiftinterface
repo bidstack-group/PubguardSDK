@@ -1,16 +1,18 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.1 (swiftlang-1200.0.41 clang-1200.0.32.8)
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
 // swift-module-flags: -target arm64-apple-ios9.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name Pubguard
 import AVFoundation
 import AdSupport
 import CoreTelephony
 import Foundation
+import Foundation/*.Data*/
 @_exported import Pubguard
 import Swift
 import SwiftProtobuf
 import SystemConfiguration
 import UIKit
 import WebKit
+import zlib
 @_hasMissingDesignatedInitializers final public class PGSystemInfo {
   @objc final public class var osVersion: Swift.String {
     @objc get
@@ -43,7 +45,19 @@ extension UIColor {
 }
 @objc @_inheritsConvenienceInitializers final public class PGAdsHandler : ObjectiveC.NSObject {
   @objc public static let shared: Pubguard.PGAdsHandler
-  @objc final public func handleImpression(usingView view: UIKit.UIView?, metadata: Swift.Dictionary<Swift.String, Any>)
+  @objc final public func handleUserAction(adNetwork network: Pubguard.PGADNetworksBridge, adType: Swift.String, url: Swift.String?, creativeId: Swift.String?)
+  @objc final public func handleCloseButton(usingView view: UIKit.UIView?)
+  @objc final public func handleImpression(usingView view: UIKit.UIView?, metadata: Swift.Dictionary<Swift.String, Any>, hasNativeButton: Swift.Bool)
+  @objc deinit
+  @objc override dynamic public init()
+}
+@_hasMissingDesignatedInitializers final public class PGCrashDetection {
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers final public class PGWebContentProcessing : ObjectiveC.NSObject {
+  @objc final public class func creativeId(fromWebView webView: WebKit.WKWebView, usingRegex pattern: Swift.String, completionHandler: @escaping (Swift.String?) -> Swift.Void)
+  @objc final public class func creativeIdEx(fromWebView webView: WebKit.WKWebView, usingRegex pattern: Swift.String, separator: Swift.String = "=", completionHandler: @escaping (Swift.String?) -> Swift.Void)
+  @objc final public class func creativeId(fromWeb webView: WebKit.WKWebView, usingFunction function: Swift.String, completionHandler: @escaping (Swift.String?) -> Swift.Void)
   @objc deinit
   @objc override dynamic public init()
 }
@@ -70,6 +84,8 @@ extension UIColor {
   case AOL
   case AppNexus
   case Chartboost
+  case AmazonMarketplace
+  case FyberMarketplace
   public typealias RawValue = Swift.Int
   public init?(rawValue: Swift.Int)
   public var rawValue: Swift.Int {
@@ -100,11 +116,13 @@ public enum PGADNetworks : Swift.String {
   case AOL
   case AppNexus
   case Chartboost
+  case AmazonMarketplace
+  case FyberMarketplace
   public typealias RawValue = Swift.String
-  public init?(rawValue: Swift.String)
   public var rawValue: Swift.String {
     get
   }
+  public init?(rawValue: Swift.String)
 }
 extension PGReportingManager {
   final public func register(webView view: UIKit.UIView?, metadata: Swift.Dictionary<Swift.String, Any>, handlerID: Foundation.UUID)
@@ -142,15 +160,50 @@ public typealias PGAPICompletionHandler = ((Pubguard.PGAction, Swift.Error?) -> 
     @objc get
   }
   @objc final public var authKey: Swift.String
+  @objc final public func activateWatchDog()
   @objc final public func activateProtection(withCompletionHandler completion: @escaping (Swift.Bool) -> Swift.Void)
-  @objc final public func isEnabled(adNetwork network: Pubguard.PGADNetworksBridge) -> Swift.Bool
+  @objc final public func isEnabled(adNetwork network: Pubguard.PGADNetworksBridge, version: Swift.String) -> Swift.Bool
   @objc override dynamic public init()
   @objc deinit
 }
 extension PubguardAPI {
   final public func report(collectedData data: Pubguard.PGReportDataBase, completionHandler completion: @escaping Pubguard.PGAPICompletionHandler)
 }
+public struct CompressionLevel : Swift.RawRepresentable {
+  public let rawValue: Swift.Int32
+  public static let noCompression: Pubguard.CompressionLevel
+  public static let bestSpeed: Pubguard.CompressionLevel
+  public static let bestCompression: Pubguard.CompressionLevel
+  public static let defaultCompression: Pubguard.CompressionLevel
+  public init(rawValue: Swift.Int32)
+  public init(_ rawValue: Swift.Int32)
+  public typealias RawValue = Swift.Int32
+}
+public struct GzipError : Swift.Error {
+  public enum Kind : Swift.Equatable {
+    case stream
+    case data
+    case memory
+    case buffer
+    case version
+    case unknown(code: Swift.Int)
+    public static func == (a: Pubguard.GzipError.Kind, b: Pubguard.GzipError.Kind) -> Swift.Bool
+  }
+  public let kind: Pubguard.GzipError.Kind
+  public let message: Swift.String
+  public var localizedDescription: Swift.String {
+    get
+  }
+}
+extension Data {
+  public var isGzipped: Swift.Bool {
+    get
+  }
+  public func gzipped(level: Pubguard.CompressionLevel = .defaultCompression) throws -> Foundation.Data
+  public func gunzipped() throws -> Foundation.Data
+}
 @objc @_inheritsConvenienceInitializers public class PGClassKey : ObjectiveC.NSObject {
+  @objc public static let creativeIDKey: Swift.String
   @objc public static let metaClassKey: Swift.String
   @objc public static let customScreenshotKey: Swift.String
   @objc public static let customViewForScreenshotKey: Swift.String
@@ -158,9 +211,12 @@ extension PubguardAPI {
   @objc public static let imageURLSKey: Swift.String
   @objc public static let redirectUrlKey: Swift.String
   @objc public static let supportViewKey: Swift.String
-  @objc public static let contentHtmlKey: Swift.String
   @objc public static let videoPlayerKey: Swift.String
   @objc public static let viewControllerKey: Swift.String
+  @objc public static let metadataKey: Swift.String
+  @objc public static let extCreativeIdKey: Swift.String
+  @objc public static let nativeCloseButton: Swift.String
+  @objc public static let closeButtonFrame: Swift.String
   @objc deinit
   @objc override dynamic public init()
 }
