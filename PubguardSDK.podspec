@@ -13,6 +13,6 @@ Pod::Spec.new do |spec|
   spec.requires_arc     = true
   spec.ios.deployment_target = '9.0'
   spec.vendored_frameworks = 'iOS/Pubguard.framework'
-  spec.dependency 'swift-protobuf'
+  spec.dependency 'SwiftProtobuf'
 
 end
