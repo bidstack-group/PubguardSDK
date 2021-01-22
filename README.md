@@ -29,7 +29,7 @@ Table of contents
 
 # Getting Started
 
-These instructions will enable you to get the Pubguard library running on your iOS/Unity app.
+These instructions will enable you to get the Pubguard library running on your iOS/Unity app.  
 Android instructions can be found at https://github.com/bidstack-group/pubguard-sdk-android
 
 ## Prerequisites
