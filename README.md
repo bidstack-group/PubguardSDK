@@ -1,4 +1,4 @@
-![alt text](imgs/pg-logo.png)
+![alt text](manual/imgs/pg-logo.png)
 
 # Pubguard Library
 
@@ -30,6 +30,7 @@ Table of contents
 # Getting Started
 
 These instructions will enable you to get the Pubguard library running on your iOS/Unity app.
+Android instructions can be found at https://github.com/bidstack-group/pubguard-sdk-android
 
 ## Prerequisites
 
@@ -297,12 +298,12 @@ These are SDKs designed specifically for serving advertising content into your a
 
 Mediation platforms or networks can be used to manage the various SDKs within your platform, although most platforms don't affect Pubguard's monitoring solution in any way if you do have a question please email support@pubguard.com to clarify.
 
-| Mediator     | iOS   | Android |
-| ------- | ----- | ------- |
-| AATKit (addApptr)   | 2.65.34|    |
-| DFP   | 7.31.0 |  |
-| AppNexusSDK | 7.2 |    |
-| MoPub | 5.11.0 | 5.10.0, 5.12.0 |
+| Mediator     | iOS   |
+| ------- | ----- |
+| AATKit (addApptr)   | 2.65.34|
+| DFP   | 7.31.0 |
+| AppNexusSDK | 7.2 |
+| MoPub | 5.11.0 |
 
 ## Requirements
 
