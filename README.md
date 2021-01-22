@@ -74,7 +74,7 @@ Add the Pubguard Library to Target > General > Embedded Binaries. If you add the
 
 ![alt text](manual/imgs/build-phase.png)
 
-Download file [strip-frameworks.sh](strip-frameworks.sh) and put this file in root folder of your project.
+Download file [strip-frameworks.sh](Pubguard.framework/strip-frameworks.sh) and put this file in root folder of your project.
 
 In Project Navigator choose your project and go to "Build Phases" and in the top left corner find and press "add" button. Hit "New Run Script Phase" and choose new "Run Script".
 
@@ -248,7 +248,7 @@ The Pubguard plugin installation is now completed.
 ## Changelog
 
 
-For all release notes and previous versions please see our [changelog](manual/changelog.md).
+For all release notes and previous versions please see our [changelog](ChangeLog.md).
 
 ---
 
