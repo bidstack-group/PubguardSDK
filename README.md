@@ -29,7 +29,7 @@ Table of contents
 
 # Getting Started
 
-These instructions will enable you to get the Pubguard library running on your iOS/Android/Unity app.
+These instructions will enable you to get the Pubguard library running on your iOS/Unity app.
 
 ## Prerequisites
 
@@ -54,7 +54,7 @@ There are 2 methods of installing the Pubguard framework:
 Please add the following line to your Podfile (adding in your app key):
 
 ```
-pod 'PubguardSDK', :git => 'https://github.com/bidstack-group/PubguardSDK.git'
+pod 'PubguardSDK', '~> 1.0.0'
 ```
 
 Then run "pod install --repo-update"
