@@ -1,4 +1,4 @@
-![alt text](imgs/pg-logo-hires.jpg)
+![alt text](imgs/pg-logo.png)
 
 # Pubguard Library
 
@@ -220,7 +220,7 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 The latest version of the Pubguard Plugin is **1.0.0**
 
-Start with importing Pubguard Package. From the **Assets** menu, choose **Import Package**, plus the name of the package you want to import. 
+Start with importing Pubguard Package. From the **Assets** menu, choose **Import Package**, plus the name of the package you want to import.
 
 ![unity-1](imgs/unity-1.png)
 
@@ -240,7 +240,7 @@ Check the [Prerequisites](#Prerequisites) section explaining how to obtain the A
 
 ![unity-4](imgs/unity-4.png)
 
-The Pubguard plugin installation is now completed. 
+The Pubguard plugin installation is now completed.
 
 ---
 
