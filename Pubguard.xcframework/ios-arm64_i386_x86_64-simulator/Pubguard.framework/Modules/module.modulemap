@@ -1,0 +1,11 @@
+framework module Pubguard {
+  umbrella header "Pubguard.h"
+
+  export *
+  module * { export * }
+}
+
+module Pubguard.Swift {
+    header "Pubguard-Swift.h"
+    requires objc
+}
