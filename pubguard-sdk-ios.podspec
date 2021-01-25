@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.source           = { :git => 'https://github.com/bidstack-group/pubguard-sdk-ios.git', :tag => spec.version.to_s }
   spec.requires_arc     = true
   spec.ios.deployment_target = '9.0'
-  spec.vendored_frameworks = 'Pubguard.framework'
+  spec.vendored_frameworks = 'Pubguard.xcframework'
   spec.dependency 'SwiftProtobuf'
 
 end
