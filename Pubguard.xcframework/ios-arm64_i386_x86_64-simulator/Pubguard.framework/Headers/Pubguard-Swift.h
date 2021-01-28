@@ -335,9 +335,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PGReportingM
 
 SWIFT_CLASS("_TtC8Pubguard22PGWebContentProcessing")
 @interface PGWebContentProcessing : NSObject
-+ (void)creativeIdFromWebView:(WKWebView * _Nonnull)webView usingRegex:(NSString * _Nonnull)pattern completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
-+ (void)creativeIdExFromWebView:(WKWebView * _Nonnull)webView usingRegex:(NSString * _Nonnull)pattern separator:(NSString * _Nonnull)separator completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 + (void)creativeIdFromWeb:(WKWebView * _Nonnull)webView usingFunction:(NSString * _Nonnull)function completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
++ (void)creativeIDFromWeb:(WKWebView * _Nonnull)webView completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -706,9 +705,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PGReportingM
 
 SWIFT_CLASS("_TtC8Pubguard22PGWebContentProcessing")
 @interface PGWebContentProcessing : NSObject
-+ (void)creativeIdFromWebView:(WKWebView * _Nonnull)webView usingRegex:(NSString * _Nonnull)pattern completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
-+ (void)creativeIdExFromWebView:(WKWebView * _Nonnull)webView usingRegex:(NSString * _Nonnull)pattern separator:(NSString * _Nonnull)separator completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 + (void)creativeIdFromWeb:(WKWebView * _Nonnull)webView usingFunction:(NSString * _Nonnull)function completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
++ (void)creativeIDFromWeb:(WKWebView * _Nonnull)webView completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -1077,9 +1075,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) PGReportingM
 
 SWIFT_CLASS("_TtC8Pubguard22PGWebContentProcessing")
 @interface PGWebContentProcessing : NSObject
-+ (void)creativeIdFromWebView:(WKWebView * _Nonnull)webView usingRegex:(NSString * _Nonnull)pattern completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
-+ (void)creativeIdExFromWebView:(WKWebView * _Nonnull)webView usingRegex:(NSString * _Nonnull)pattern separator:(NSString * _Nonnull)separator completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
 + (void)creativeIdFromWeb:(WKWebView * _Nonnull)webView usingFunction:(NSString * _Nonnull)function completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completionHandler;
++ (void)creativeIDFromWeb:(WKWebView * _Nonnull)webView completionHandler:(void (^ _Nonnull)(NSString * _Nullable))completion;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
