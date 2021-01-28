@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		4kX6cHvdiXI3HKJcuMmx68SPki4=
+		EMkIS7xeVqPRRu1n6P1J+oIGqMU=
 		</data>
 		<key>Headers/Pubguard-Swift.h</key>
 		<data>
-		2hh6DwRzNJGrW9hoiWRjd+kmoYk=
+		9pBmxr9fpkYS34QbvLI3HRmCNzs=
 		</data>
 		<key>Headers/Pubguard.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		eT5AEBG1fLwCsV6i1h2BpKqHSYA=
+		MPWPC4N/77NO315lWaQN7SNZnic=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,11 +26,11 @@
 		</data>
 		<key>Modules/Pubguard.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DLYRzZ0zZFexDju30TOYaPfxKSs=
+		jfVdCTUzqjFzagfqH/NYnCr7Uy0=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ZKhLGlWa5J9dfyG3SCTgzEHDaNE=
+		b/0SEYZup5dMxwhHomLP1kIqxUU=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/Pubguard.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		DLYRzZ0zZFexDju30TOYaPfxKSs=
+		jfVdCTUzqjFzagfqH/NYnCr7Uy0=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		ZKhLGlWa5J9dfyG3SCTgzEHDaNE=
+		b/0SEYZup5dMxwhHomLP1kIqxUU=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/Pubguard.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		DZ2EXy/9Hcbx5dqDMWFm6huKaW4=
+		JejFQE/SeDr6cx2vg9u/NFeVIao=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		V0yVTDwTbDm5Y7maeXK1UXRBS+s=
+		MNopZUlLI9+16lKC349PvSBzx2U=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/Pubguard.swiftmodule/i386.swiftinterface</key>
 		<data>
-		DZ2EXy/9Hcbx5dqDMWFm6huKaW4=
+		JejFQE/SeDr6cx2vg9u/NFeVIao=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/i386.swiftmodule</key>
 		<data>
-		V0yVTDwTbDm5Y7maeXK1UXRBS+s=
+		MNopZUlLI9+16lKC349PvSBzx2U=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/Pubguard.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aNsI9L5PHUZPAzDxcPFG0qJxHJA=
+		fRWBnE3eYpTT+xFqRTz3C2TVDBw=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O4j74hZMmn6j9i7fIWnjJitA1bA=
+		13p2iYiNjYqnWTrQ/5bkO+tMosc=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Modules/Pubguard.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		aNsI9L5PHUZPAzDxcPFG0qJxHJA=
+		fRWBnE3eYpTT+xFqRTz3C2TVDBw=
 		</data>
 		<key>Modules/Pubguard.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		O4j74hZMmn6j9i7fIWnjJitA1bA=
+		13p2iYiNjYqnWTrQ/5bkO+tMosc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -119,22 +119,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4kX6cHvdiXI3HKJcuMmx68SPki4=
+			EMkIS7xeVqPRRu1n6P1J+oIGqMU=
 			</data>
 			<key>hash2</key>
 			<data>
-			E6g3JGK4ZNVrVXIulQKYeKhs8w1sQ3Ssfdiddc/Ct8E=
+			jB8A+PUaNAOSSxK4Uxi8Dp9WviHQ94YxmvSDYTWb1eM=
 			</data>
 		</dict>
 		<key>Headers/Pubguard-Swift.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			2hh6DwRzNJGrW9hoiWRjd+kmoYk=
+			9pBmxr9fpkYS34QbvLI3HRmCNzs=
 			</data>
 			<key>hash2</key>
 			<data>
-			G8LZVQVch0B9cQAknkPwQlA2b/00/N8ELPYy7Ol/f/0=
+			4jMr16k2ZpI7J179p4qw6gqQwc+aiIceTPEsRyZ/YlY=
 			</data>
 		</dict>
 		<key>Headers/Pubguard.h</key>
@@ -163,22 +163,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DLYRzZ0zZFexDju30TOYaPfxKSs=
+			jfVdCTUzqjFzagfqH/NYnCr7Uy0=
 			</data>
 			<key>hash2</key>
 			<data>
-			XrULt4k2jnr+TD5FWLv/44pyUmNHBrPWM57ijUHYu8w=
+			aDbFSrJG6zLSTSIbWw87xDB2dYcnJhn+um78Abq9Jks=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZKhLGlWa5J9dfyG3SCTgzEHDaNE=
+			b/0SEYZup5dMxwhHomLP1kIqxUU=
 			</data>
 			<key>hash2</key>
 			<data>
-			gqU/UGWEfngqIoPv9hsp/Lno90glgKyX7xQsoVkPJDs=
+			IFGvsgFnEtOpAnDX1k1iMXUN1LLNsPGd+7s1l5/zzOo=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/arm64.swiftdoc</key>
@@ -196,22 +196,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DLYRzZ0zZFexDju30TOYaPfxKSs=
+			jfVdCTUzqjFzagfqH/NYnCr7Uy0=
 			</data>
 			<key>hash2</key>
 			<data>
-			XrULt4k2jnr+TD5FWLv/44pyUmNHBrPWM57ijUHYu8w=
+			aDbFSrJG6zLSTSIbWw87xDB2dYcnJhn+um78Abq9Jks=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ZKhLGlWa5J9dfyG3SCTgzEHDaNE=
+			b/0SEYZup5dMxwhHomLP1kIqxUU=
 			</data>
 			<key>hash2</key>
 			<data>
-			gqU/UGWEfngqIoPv9hsp/Lno90glgKyX7xQsoVkPJDs=
+			IFGvsgFnEtOpAnDX1k1iMXUN1LLNsPGd+7s1l5/zzOo=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -229,22 +229,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DZ2EXy/9Hcbx5dqDMWFm6huKaW4=
+			JejFQE/SeDr6cx2vg9u/NFeVIao=
 			</data>
 			<key>hash2</key>
 			<data>
-			wvEh50v288/cgHQwhfLuJJf9u85a7olfZ/8RAFe7O9I=
+			HS1nMCJ1a8kD1+hsHbrA2ZlITKAj0pEIrwaAxZML6sw=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V0yVTDwTbDm5Y7maeXK1UXRBS+s=
+			MNopZUlLI9+16lKC349PvSBzx2U=
 			</data>
 			<key>hash2</key>
 			<data>
-			oONWT+gYd85WJuw2OLNeoX1wclpb51oN665jKTzb4PY=
+			EnkPWCSuEN/WQooQU40OYmIXul69RQuiEDFbFmrXafo=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/i386.swiftdoc</key>
@@ -262,22 +262,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DZ2EXy/9Hcbx5dqDMWFm6huKaW4=
+			JejFQE/SeDr6cx2vg9u/NFeVIao=
 			</data>
 			<key>hash2</key>
 			<data>
-			wvEh50v288/cgHQwhfLuJJf9u85a7olfZ/8RAFe7O9I=
+			HS1nMCJ1a8kD1+hsHbrA2ZlITKAj0pEIrwaAxZML6sw=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			V0yVTDwTbDm5Y7maeXK1UXRBS+s=
+			MNopZUlLI9+16lKC349PvSBzx2U=
 			</data>
 			<key>hash2</key>
 			<data>
-			oONWT+gYd85WJuw2OLNeoX1wclpb51oN665jKTzb4PY=
+			EnkPWCSuEN/WQooQU40OYmIXul69RQuiEDFbFmrXafo=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -295,22 +295,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aNsI9L5PHUZPAzDxcPFG0qJxHJA=
+			fRWBnE3eYpTT+xFqRTz3C2TVDBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			dU04JlrzVh82K1W6hP9Mvet23vjNNLWr5luZBqL+WSs=
+			zFuK95I0KC2XDgSERnR0lKJXqA7cbh1n+6ZzUXtHdYk=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O4j74hZMmn6j9i7fIWnjJitA1bA=
+			13p2iYiNjYqnWTrQ/5bkO+tMosc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Seg2Veybfc0PGvc73MsLE2xM64cxpDvKCl7mSCbZe+w=
+			5x2MPz+KCc1w+0K5GKDSZ844tzBJtxKS39vjWq8g1BQ=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/x86_64.swiftdoc</key>
@@ -328,22 +328,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aNsI9L5PHUZPAzDxcPFG0qJxHJA=
+			fRWBnE3eYpTT+xFqRTz3C2TVDBw=
 			</data>
 			<key>hash2</key>
 			<data>
-			dU04JlrzVh82K1W6hP9Mvet23vjNNLWr5luZBqL+WSs=
+			zFuK95I0KC2XDgSERnR0lKJXqA7cbh1n+6ZzUXtHdYk=
 			</data>
 		</dict>
 		<key>Modules/Pubguard.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			O4j74hZMmn6j9i7fIWnjJitA1bA=
+			13p2iYiNjYqnWTrQ/5bkO+tMosc=
 			</data>
 			<key>hash2</key>
 			<data>
-			Seg2Veybfc0PGvc73MsLE2xM64cxpDvKCl7mSCbZe+w=
+			5x2MPz+KCc1w+0K5GKDSZ844tzBJtxKS39vjWq8g1BQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

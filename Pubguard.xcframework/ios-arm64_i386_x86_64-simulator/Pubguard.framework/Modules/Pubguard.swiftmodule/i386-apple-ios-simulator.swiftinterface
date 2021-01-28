@@ -55,9 +55,8 @@ extension UIColor {
   @objc deinit
 }
 @objc @_inheritsConvenienceInitializers final public class PGWebContentProcessing : ObjectiveC.NSObject {
-  @objc final public class func creativeId(fromWebView webView: WebKit.WKWebView, usingRegex pattern: Swift.String, completionHandler: @escaping (Swift.String?) -> Swift.Void)
-  @objc final public class func creativeIdEx(fromWebView webView: WebKit.WKWebView, usingRegex pattern: Swift.String, separator: Swift.String = "=", completionHandler: @escaping (Swift.String?) -> Swift.Void)
   @objc final public class func creativeId(fromWeb webView: WebKit.WKWebView, usingFunction function: Swift.String, completionHandler: @escaping (Swift.String?) -> Swift.Void)
+  @objc final public class func creativeID(fromWeb webView: WebKit.WKWebView, completionHandler completion: @escaping (Swift.String?) -> Swift.Void)
   @objc deinit
   @objc override dynamic public init()
 }
