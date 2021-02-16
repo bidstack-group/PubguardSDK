@@ -67,20 +67,15 @@ Please request the Pubguard Library Bundle from support@pubguard.com which will 
 The Pubguard Bundle contains two frameworks:
 Pubguard.xcframework  
 SwiftProtobuf.frameworks  
-  
+
 Copy these two frameworks into your Xcode project and add them to the all targets:
 
 ![alt text](manual/imgs/add.png)
 
-Add the Pubguard Library to Target > General > Embedded Binaries. If you add the framework to "embedded binaries", the framework will also be added to "Linked Frameworks and Libraries".
+Check that these two frameworks appeared in
 
 ![alt text](manual/imgs/link.png)
 
-![alt text](manual/imgs/build-phase.png)
-
-Also in "Build Phases" add Pubguard framework in "Embed Frameworks".
-
-![alt text](manual/imgs/add-embed-frameworks.png)
 
 
 #### Unity installation
