@@ -62,9 +62,13 @@ Then run "pod install --repo-update"
 
 #### Adding the library manually
 
-Please request the Pubguard Library from support@pubguard.com which will have the key embedded in it.
+Please request the Pubguard Library Bundle from support@pubguard.com which will have the key embedded in it.
 
-Once received copy the Pubguard.framework into your Xcode project and add it to all targets that will link to Pubguard:
+The Pubguard Bundle contains two frameworks:
+Pubguard.xcframework  
+SwiftProtobuf.frameworks  
+  
+Copy these two frameworks into your Xcode project and add them to the all targets:
 
 ![alt text](manual/imgs/add.png)
 
