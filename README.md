@@ -74,20 +74,6 @@ Add the Pubguard Library to Target > General > Embedded Binaries. If you add the
 
 ![alt text](manual/imgs/build-phase.png)
 
-Download file [strip-frameworks.sh](Pubguard.framework/strip-frameworks.sh) and put this file in root folder of your project.
-
-In Project Navigator choose your project and go to "Build Phases" and in the top left corner find and press "add" button. Hit "New Run Script Phase" and choose new "Run Script".
-
-![alt text](manual/imgs/select-build-script.png)
-
-Add the following Build script
-
-```
-bash "${SRCROOT}/${PROJECT_NAME}/strip-frameworks.sh"
-```
-
-![alt text](manual/imgs/add-build-script.png)
-
 Also in "Build Phases" add Pubguard framework in "Embed Frameworks".
 
 ![alt text](manual/imgs/add-embed-frameworks.png)
@@ -99,10 +85,10 @@ Unity supports installation via cocoapods and manual installation. Framework mus
 
 ##### cocoapods (Unity)
 
-Please add the following line to your Podfile (adding in your app key):
+Please ensure that your Podfile containing the following line:
 
 ```
-pod 'PubguardSDK', :git => 'https://github.com/bidstack-group/pubguard-sdk-ios.git'
+pod 'PubguardSDK', '~> 1.0.0'
 ```
 
 Then run "pod install --repo-update"
