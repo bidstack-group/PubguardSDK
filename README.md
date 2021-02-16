@@ -34,11 +34,9 @@ Android instructions can be found [here](https://github.com/bidstack-group/pubgu
 
 ## Prerequisites
 
-Before installing the pubguard library you will need an application key which is available from your account, in order to receive a key please signup from https://bidstack.pubguard.com or email support@pubguard.com. The key is used in both the iOS and Android installations.
+Before installing the Pubguard library you will need an application key:  
 
-```
-pubguardKey = "xxxxxxxxxxxxxxxxxxx"
-```
+??? NEED INSTRUCTION FOR GETTING THE KEY ???
 
 ---
 
@@ -62,20 +60,23 @@ Then run "pod install --repo-update"
 
 #### Adding the library manually
 
-Please request the Pubguard Library Bundle from support@pubguard.com which will have the key embedded in it.
+Please request the Pubguard Library Bundle from support@pubguard.com or clone the bundle from the git repository:
+```
+git clone https://github.com/bidstack-group/pubguard-sdk-ios.git
+```
 
 The Pubguard Bundle contains two frameworks:
 Pubguard.xcframework  
 SwiftProtobuf.frameworks  
 
-Copy these two frameworks into your Xcode project and add them to the all targets:
+Copy these two frameworks into your Xcode project and add them to all targets:
 
 ![alt text](manual/imgs/add.png)
 
-Check that these two frameworks appeared in
+These two frameworks will appear in *Frameworks, Libraries, and Embedded Content* section.
+Choose *Embed and Sign* for both frameworks, as on the image below:
 
 ![alt text](manual/imgs/link.png)
-
 
 
 #### Unity installation
@@ -102,7 +103,8 @@ The Pubguard Library should be initialised once at app launch, Here's an example
 
 #### Swift
 
-The Pubguard Library is written in Obj-c so if your app is Swift please see the guide on adding a [bridging header](#Bridging Header).
+The Pubguard Library contains the Swift Module.  
+You only need to import that module, check the code example below:  
 
 ```swift
 *Example AppDelegate.swift*
@@ -148,34 +150,6 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 @end
 ```
-
-#### Bridging Header
-
-This is a quick guide explaining how to add a bridging header if you have built your app in Swift and are using the Pubguard Library.
-
-Create a new file in your project:
-
-![alt text](manual/imgs/new-file.png)
-
-Select 'header file' and name it Pubguard-Bridging-Header
-
-![alt text](manual/imgs/add-header.png)
-
-### Update your Bridging Header File
-
-Add **#import 'Pubguard/Pubguard.h'** to new header file, this will allow you to import the Pubguard Library in your Swift app
-
-![alt text](manual/imgs/header-file.png)
-
-### Update your Build Settings to include the Bridging Header
-
-In **Project Settings -> Build Settings** search for *"Swift Compiler - Code Generation"*  add the Bridging header to the line *Objective-C Bridging Header*
-
-![alt text](manual/imgs/build-settings.png)
-
-### That's it! You should now be able to access the library as normal:
-
-![alt text](manual/imgs/example-init.png)
 
 #### Unity
 
