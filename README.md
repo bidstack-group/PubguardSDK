@@ -217,27 +217,21 @@ These are SDKs designed specifically for serving advertising content into your a
 
 | Company/Product | iOS SDK identifier | iOS versions |
 | ------- | ----- | ------- |
-| AdColony | | 4.1.4|
-| AdMob | Google-Mobile-Ads-SDK | 7.57.0 |
-| Amazon Mobile Ads | | |
-| AppLovin | | |
-| AppNexus | AppNexusSDK | 7.2 |
-| Chartboost | | |
-| Facebook Audience Network | FBAudienceNetwork | 5.8.0 |
-| Fyber Marketplace |  |  |
-| InMobi | InMobiSDK | 9.0.6 |
-| ironSource | IronSourceSDK | 6.15.0.1 |
-| MoPub |  | 5.14.0 |
-| MoPub mediation - AdMob | |  |
-| MoPub mediation - Unity | |  |
-| One by AOL | MMAdSDK | 6.8.2|
-| OpenX | | 4.8.1 |
-| Rubicon Project | RFMAdSDK | 6.4.0|
-| Smaato | | |
-| Tapjoy | | 12.4.2 |
-| Unity Ads | | 3.4.2 |
-| Verizon | | 1.5.0 |
-| Vungle | | 6.5.3 |
+| AdColony | AdColony | 4.4.1 |
+| AdMob | Google-Mobile-Ads-SDK | 7.66.0 |
+| Amazon Mobile Ads | AmazonAd | 3.1.0 |
+| Amazon Transparent Ad Marketplace | AmazonPublisherServicesSDK | 3.4.0 |
+| AppLovin | AppLovinSDK | 6.14.5 |
+| Chartboost | ChartboostSDK | 8.3.1 |
+| Facebook Audience Network | FBAudienceNetwork | 6.0.0 |
+| Fyber Marketplace | Fyber_Marketplace_SDK | 7.7.2 |
+| InMobi | InMobiSDK | 9.1.1 |
+| IronSource | IronSourceSDK | 7.0.3 |
+| MoPub | mopub-ios-sdk | 5.14.1 |
+| Smaato | smaato-ios-sdk | 21.6.5 |
+| Unity Ads | UnityAds | 3.5.0 |
+| Verizon | Verizon-Ads-StandardEdition | 1.8.0 |
+| Vungle | VungleSDK-iOS | 6.8.1 |
 
 ## Requirements
 
