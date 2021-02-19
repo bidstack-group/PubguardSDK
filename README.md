@@ -34,9 +34,7 @@ Android instructions can be found [here](https://github.com/bidstack-group/pubgu
 
 ## Prerequisites
 
-Before installing the Pubguard library you will need an application key:  
-
-??? NEED INSTRUCTION FOR GETTING THE KEY ???
+Before installing the Pubguard library you will need an application key,  please visit the [Pubguard Portal](https://dashboard.pubguard.com/) for more details.
 
 ---
 
@@ -65,7 +63,7 @@ Please request the Pubguard Library Bundle from support@pubguard.com or clone th
 git clone https://github.com/bidstack-group/pubguard-sdk-ios.git
 ```
 
-The Pubguard Bundle contains two frameworks:
+The Pubguard Bundle contains two frameworks: 
 Pubguard.xcframework  
 SwiftProtobuf.frameworks  
 
@@ -211,18 +209,6 @@ For all release notes and previous versions please see our [changelog](ChangeLog
 
 ---
 
-## Library Size
-
-The Pubguard team understands the importance of having a small footprint and our library is optimised to be as lightweight as possible on both iOS and Android.
-
-Here is a guide based based on our compiling with our test apps, please bear in mind the size may increase or reduce based on the amount of SDKs you use and the amount of shared dependancies.
-
-|Dependancies| iOS   |
-| ---- | ----- |
-| Total |~140kb |
-
----
-
 ## Support
 
 ### Advertising SDK support
@@ -252,17 +238,6 @@ These are SDKs designed specifically for serving advertising content into your a
 | Unity Ads | | 3.4.2 |
 | Verizon | | 1.5.0 |
 | Vungle | | 6.5.3 |
-
-### Mediation Support
-
-Mediation platforms or networks can be used to manage the various SDKs within your platform, although most platforms don't affect Pubguard's monitoring solution in any way if you do have a question please email support@pubguard.com to clarify.
-
-| Mediator     | iOS   |
-| ------- | ----- |
-| AATKit (addApptr)   | 2.65.34|
-| DFP   | 7.31.0 |
-| AppNexusSDK | 7.2 |
-| MoPub | 5.11.0 |
 
 ## Requirements
 
