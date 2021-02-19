@@ -34,11 +34,7 @@ Android instructions can be found [here](https://github.com/bidstack-group/pubgu
 
 ## Prerequisites
 
-Before installing the pubguard library you will need an application key which is available from your account, in order to receive a key please signup from https://bidstack.pubguard.com or email support@pubguard.com. The key is used in both the iOS and Android installations.
-
-```
-pubguardKey = "xxxxxxxxxxxxxxxxxxx"
-```
+Before installing the Pubguard library you will need an application key,  please visit the [Pubguard Portal](https://dashboard.pubguard.com/) for more details.
 
 ---
 
@@ -62,35 +58,23 @@ Then run "pod install --repo-update"
 
 #### Adding the library manually
 
-Please request the Pubguard Library from support@pubguard.com which will have the key embedded in it.
+Please request the Pubguard Library Bundle from support@pubguard.com or clone the bundle from the git repository:
+```
+git clone https://github.com/bidstack-group/pubguard-sdk-ios.git
+```
 
-Once received copy the Pubguard.framework into your Xcode project and add it to all targets that will link to Pubguard:
+The Pubguard Bundle contains two frameworks: 
+Pubguard.xcframework  
+SwiftProtobuf.frameworks  
+
+Copy these two frameworks into your Xcode project and add them to all targets:
 
 ![alt text](manual/imgs/add.png)
 
-Add the Pubguard Library to Target > General > Embedded Binaries. If you add the framework to "embedded binaries", the framework will also be added to "Linked Frameworks and Libraries".
+These two frameworks will appear in *Frameworks, Libraries, and Embedded Content* section.
+Choose *Embed and Sign* for both frameworks, as on the image below:
 
 ![alt text](manual/imgs/link.png)
-
-![alt text](manual/imgs/build-phase.png)
-
-Download file [strip-frameworks.sh](Pubguard.framework/strip-frameworks.sh) and put this file in root folder of your project.
-
-In Project Navigator choose your project and go to "Build Phases" and in the top left corner find and press "add" button. Hit "New Run Script Phase" and choose new "Run Script".
-
-![alt text](manual/imgs/select-build-script.png)
-
-Add the following Build script
-
-```
-bash "${SRCROOT}/${PROJECT_NAME}/strip-frameworks.sh"
-```
-
-![alt text](manual/imgs/add-build-script.png)
-
-Also in "Build Phases" add Pubguard framework in "Embed Frameworks".
-
-![alt text](manual/imgs/add-embed-frameworks.png)
 
 
 #### Unity installation
@@ -99,10 +83,10 @@ Unity supports installation via cocoapods and manual installation. Framework mus
 
 ##### cocoapods (Unity)
 
-Please add the following line to your Podfile (adding in your app key):
+Please ensure that your Podfile containing the following line:
 
 ```
-pod 'PubguardSDK', :git => 'https://github.com/bidstack-group/pubguard-sdk-ios.git'
+pod 'PubguardSDK', '~> 1.0.0'
 ```
 
 Then run "pod install --repo-update"
@@ -117,7 +101,8 @@ The Pubguard Library should be initialised once at app launch, Here's an example
 
 #### Swift
 
-The Pubguard Library is written in Obj-c so if your app is Swift please see the guide on adding a [bridging header](#Bridging Header).
+The Pubguard Library contains the Swift Module.  
+You only need to import that module, check the code example below:  
 
 ```swift
 *Example AppDelegate.swift*
@@ -163,34 +148,6 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
 @end
 ```
-
-#### Bridging Header
-
-This is a quick guide explaining how to add a bridging header if you have built your app in Swift and are using the Pubguard Library.
-
-Create a new file in your project:
-
-![alt text](manual/imgs/new-file.png)
-
-Select 'header file' and name it Pubguard-Bridging-Header
-
-![alt text](manual/imgs/add-header.png)
-
-### Update your Bridging Header File
-
-Add **#import 'Pubguard/Pubguard.h'** to new header file, this will allow you to import the Pubguard Library in your Swift app
-
-![alt text](manual/imgs/header-file.png)
-
-### Update your Build Settings to include the Bridging Header
-
-In **Project Settings -> Build Settings** search for *"Swift Compiler - Code Generation"*  add the Bridging header to the line *Objective-C Bridging Header*
-
-![alt text](manual/imgs/build-settings.png)
-
-### That's it! You should now be able to access the library as normal:
-
-![alt text](manual/imgs/example-init.png)
 
 #### Unity
 
@@ -252,58 +209,29 @@ For all release notes and previous versions please see our [changelog](ChangeLog
 
 ---
 
-## Library Size
-
-The Pubguard team understands the importance of having a small footprint and our library is optimised to be as lightweight as possible on both iOS and Android.
-
-Here is a guide based based on our compiling with our test apps, please bear in mind the size may increase or reduce based on the amount of SDKs you use and the amount of shared dependancies.
-
-|Dependancies| iOS   |
-| ---- | ----- |
-| Total |~140kb |
-
----
-
 ## Support
 
 ### Advertising SDK support
 
 These are SDKs designed specifically for serving advertising content into your app, if you would like information on a version or vendor that is not on this list please email support@pubguard.com
 
-| Company/Product | iOS SDK identifier | iOS versions |
+| Company/Product | iOS SDK identifier | SDK versions |
 | ------- | ----- | ------- |
-| AdColony | | 4.1.4|
-| AdMob | Google-Mobile-Ads-SDK | 7.57.0 |
-| Amazon Mobile Ads | | |
-| AppLovin | | |
-| AppNexus | AppNexusSDK | 7.2 |
-| Chartboost | | |
-| Facebook Audience Network | FBAudienceNetwork | 5.8.0 |
-| Fyber Marketplace |  |  |
-| InMobi | InMobiSDK | 9.0.6 |
-| ironSource | IronSourceSDK | 6.15.0.1 |
-| MoPub |  | 5.14.0 |
-| MoPub mediation - AdMob | |  |
-| MoPub mediation - Unity | |  |
-| One by AOL | MMAdSDK | 6.8.2|
-| OpenX | | 4.8.1 |
-| Rubicon Project | RFMAdSDK | 6.4.0|
-| Smaato | | |
-| Tapjoy | | 12.4.2 |
-| Unity Ads | | 3.4.2 |
-| Verizon | | 1.5.0 |
-| Vungle | | 6.5.3 |
-
-### Mediation Support
-
-Mediation platforms or networks can be used to manage the various SDKs within your platform, although most platforms don't affect Pubguard's monitoring solution in any way if you do have a question please email support@pubguard.com to clarify.
-
-| Mediator     | iOS   |
-| ------- | ----- |
-| AATKit (addApptr)   | 2.65.34|
-| DFP   | 7.31.0 |
-| AppNexusSDK | 7.2 |
-| MoPub | 5.11.0 |
+| AdColony | AdColony | 4.4.1 |
+| AdMob | Google-Mobile-Ads-SDK | 7.66.0 |
+| Amazon Mobile Ads | AmazonAd | 3.1.0 |
+| Amazon Transparent Ad Marketplace | AmazonPublisherServicesSDK | 3.4.0 |
+| AppLovin | AppLovinSDK | 6.14.5 |
+| Chartboost | ChartboostSDK | 8.3.1 |
+| Facebook Audience Network | FBAudienceNetwork | 6.0.0 |
+| Fyber Marketplace | Fyber_Marketplace_SDK | 7.7.2 |
+| InMobi | InMobiSDK | 9.1.1 |
+| IronSource | IronSourceSDK | 7.0.3 |
+| MoPub | mopub-ios-sdk | 5.14.1 |
+| Smaato | smaato-ios-sdk | 21.6.5 |
+| Unity Ads | UnityAds | 3.5.0 |
+| Verizon | Verizon-Ads-StandardEdition | 1.8.0 |
+| Vungle | VungleSDK-iOS | 6.8.1 |
 
 ## Requirements
 
