@@ -215,7 +215,7 @@ For all release notes and previous versions please see our [changelog](ChangeLog
 
 These are SDKs designed specifically for serving advertising content into your app, if you would like information on a version or vendor that is not on this list please email support@pubguard.com
 
-| Company/Product | iOS SDK identifier | iOS versions |
+| Company/Product | iOS SDK identifier | SDK versions |
 | ------- | ----- | ------- |
 | AdColony | AdColony | 4.4.1 |
 | AdMob | Google-Mobile-Ads-SDK | 7.66.0 |
