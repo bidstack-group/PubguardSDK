@@ -218,12 +218,11 @@ These are SDKs designed specifically for serving advertising content into your a
 | Company/Product | iOS SDK identifier | SDK versions |
 | ------- | ----- | ------- |
 | AdColony | AdColony | 4.4.1 |
-| AdMob | Google-Mobile-Ads-SDK | 7.66.0 |
+| AdMob | Google-Mobile-Ads-SDK | 7.68.0 |
 | Amazon Mobile Ads | AmazonAd | 3.1.0 |
 | Amazon Transparent Ad Marketplace | AmazonPublisherServicesSDK | 3.4.0 |
 | AppLovin | AppLovinSDK | 6.14.5 |
 | Chartboost | ChartboostSDK | 8.3.1 |
-| Facebook Audience Network | FBAudienceNetwork | 6.0.0 |
 | Fyber Marketplace | Fyber_Marketplace_SDK | 7.7.2 |
 | InMobi | InMobiSDK | 9.1.1 |
 | IronSource | IronSourceSDK | 7.0.3 |
