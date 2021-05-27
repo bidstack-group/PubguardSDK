@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://github.com/bidstack-group/pubguard-sdk-ios"
 
-  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
+  spec.license      = { :type => 'MIT', :file => 'LICENSE.TXT' }
 
   spec.author       = { "Alexey Volkov" => "aleksejs.volkovs@bidstack.com" }
   spec.platform     = :ios, "9.0"
