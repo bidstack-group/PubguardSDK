@@ -5,7 +5,8 @@ Pod::Spec.new do |spec|
   spec.summary      = "PubguardSDK framework for iOS."
 
   spec.description  = <<-DESC
-			  PubguardSDK is a bad ad protection service.\n
+			  The Pubguard Library is solution that monitors the advertising content flowing through your mobile app,\n
+			  protecting against unwanted content and optimising revenues.
 		      DESC
 
   spec.homepage     = "https://github.com/bidstack-group/pubguard-sdk-ios"
@@ -23,7 +24,5 @@ Pod::Spec.new do |spec|
   spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
   spec.vendored_frameworks  = "PubguardSDK.xcframework"
-  spec.platform = :ios
-  spec.ios.deployment_target  = "12.0"
-
+	
 end
