@@ -2,14 +2,15 @@ Pod::Spec.new do |spec|
 
   spec.name         = "PubguardSDK"
   spec.version      = "0.0.9"
-  spec.summary      = "A short description of PubguardSDK."
+  spec.summary      = "PubguardSDK framework for iOS."
 
   spec.description  = <<-DESC
-					   DESC
+			  PubguardSDK is a bad ad protection service.\n
+		      DESC
 
-  spec.homepage     = "http://EXAMPLE/PubguardSDK"
+  spec.homepage     = "https://github.com/bidstack-group/pubguard-sdk-ios"
 
-  spec.license      = "MIT (example)"
+  spec.license      = { :type => 'MIT', :file => 'LICENSE' }
 
   spec.author       = { "Alexey Volkov" => "aleksejs.volkovs@bidstack.com" }
   spec.platform     = :ios, "9.0"
