@@ -23,7 +23,6 @@ Table of contents
 * [Requirements](#requirements)
 * [Versioning](#versioning)
 * [License](#license)
-<!--* [FAQs](https://github.com/bidstack-group/pubguardSDK/wiki/FAQs)-->
 
 <!--te-->
 
@@ -133,7 +132,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ```objective-c
 *Example AppDelegate.m (excerpt)*
 
-#import "Pubguard/Pubguard.h"
+#import "Pubguard/PubguardSDK.h"
 …
 
 @implementation AppDelegate
@@ -156,7 +155,7 @@ As was mentioned earlier, pubguard installation and initialization must be in Xc
 ```objective-c
 *Example UnityAppController.mm (excerpt)*
 
-#import <Pubguard/Pubguard.h>
+#import <Pubguard/PubguardSDK.h>
 …
 
 @implementation UnityAppController
@@ -237,7 +236,7 @@ These are SDKs designed specifically for serving advertising content into your a
 ### iOS Requirements
 
 + iOS 9.0 and up
-+ Xcode 11.0 and up
++ Xcode 12.2 and up
 
 ---
 
@@ -249,4 +248,4 @@ Please use the most up to date version at all times to ensure maximum support.
 
 ## License
 
-*© 2019 Minimised Media Limited (Pubguard© 2019 All Rights Reserved)*
+*© 2021 Minimised Media Limited (Pubguard© 2019 All Rights Reserved)*
