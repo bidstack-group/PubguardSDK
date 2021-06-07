@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
 			  protecting against unwanted content and optimising revenues.
 		      DESC
 
-  spec.homepage     = "https://github.com/bidstack-group/pubguard-sdk-ios"
+  spec.homepage     = "https://pubguard.com"
 
   spec.license      = { :type => 'MIT', :file => 'LICENSE.TXT' }
 
