@@ -5,9 +5,7 @@ import AVFoundation
 import AVKit
 import AdSupport
 import Combine
-import CommonCrypto/*.CC_LONG*/
-import CommonCrypto/*.CC_MD5*/
-import CommonCrypto/*.CC_MD5_DIGEST_LENGTH*/
+import CommonCrypto
 import CoreData
 import CoreTelephony
 import Foundation

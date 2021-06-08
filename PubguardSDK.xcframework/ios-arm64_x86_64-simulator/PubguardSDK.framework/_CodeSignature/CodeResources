@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		U+5UchVoO5ulx9O5vaMo3bUfrMM=
+		sVBpE7Kas95le60MwH9kCDsV4ts=
 		</data>
 		<key>Headers/ObjectProperties.h</key>
 		<data>
@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		2kuHEpEKSRUVIbOCW/gJPJhe2xI=
+		N0CCWt7j8fC1g2Ha1gJG5aISi9s=
 		</data>
 		<key>InternalDataModel.mom</key>
 		<data>
@@ -38,11 +38,11 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		zDZCX0DYdO5KYtFz5muzCyd1ynU=
+		IlolUJkZi95GlyUf88T9MrLYmag=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3UV69OtwFMM8r1HbGhtJWJTm9DQ=
+		bSegHvsqsGVVWs+jqkUv5n309AQ=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		zDZCX0DYdO5KYtFz5muzCyd1ynU=
+		IlolUJkZi95GlyUf88T9MrLYmag=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		3UV69OtwFMM8r1HbGhtJWJTm9DQ=
+		bSegHvsqsGVVWs+jqkUv5n309AQ=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		+f8kMhnzdrdMSlhwICnje6Dg1wc=
+		/mdWm+226OdI5oK4TkEYm1zerdA=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		AHTD4auWDtfiveVV/z80JSDGuuI=
+		zqKN4twI+BfgL45bs3v+1QDLgsI=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		+f8kMhnzdrdMSlhwICnje6Dg1wc=
+		/mdWm+226OdI5oK4TkEYm1zerdA=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		AHTD4auWDtfiveVV/z80JSDGuuI=
+		zqKN4twI+BfgL45bs3v+1QDLgsI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -99,7 +99,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			22xZjU9skWj4BI2P7lRbSHpmZ2niiD8eJFvuYf8KuZY=
+			NJe/SYskJ5+GrMYPf3vgYxSjGvKtYvusEDNWSZlcdZ4=
 			</data>
 		</dict>
 		<key>Headers/ObjectProperties.h</key>
@@ -148,14 +148,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z85Wyt7jBdMezOmIjZZvfz7TWJ80X7UErvmwmmhcrWI=
+			4oFKfHLHtwE/XmNzTdKGNyR0IhnYTGQlTBFf6JC6NtQ=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ZaG049KD3eZJ1rXRQnlwDIRIKVg1pGZPLoOSC5Fhoc=
+			X5TITn2udEqOnjk48uTMiNUxYUf+D+NL84lP6fC+bZE=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/arm64.swiftdoc</key>
@@ -169,14 +169,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			z85Wyt7jBdMezOmIjZZvfz7TWJ80X7UErvmwmmhcrWI=
+			4oFKfHLHtwE/XmNzTdKGNyR0IhnYTGQlTBFf6JC6NtQ=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7ZaG049KD3eZJ1rXRQnlwDIRIKVg1pGZPLoOSC5Fhoc=
+			X5TITn2udEqOnjk48uTMiNUxYUf+D+NL84lP6fC+bZE=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -190,14 +190,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MnQcqnZJ+R5PDkiZjNTJkf0JfYiVLVd7FVOoqFgFcBE=
+			Zkb80RplajyUZl2VlrwXTVO99VlUo9l7pCWf4UZhsts=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QwywV4G1dwDhXvEYPDVOdML3DBgYBvzN+38L2jNjhKU=
+			8j4ygOm2TtZVUBP4YmwIglZzinceLhMzNqGO3+kAkbk=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -211,14 +211,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MnQcqnZJ+R5PDkiZjNTJkf0JfYiVLVd7FVOoqFgFcBE=
+			Zkb80RplajyUZl2VlrwXTVO99VlUo9l7pCWf4UZhsts=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QwywV4G1dwDhXvEYPDVOdML3DBgYBvzN+38L2jNjhKU=
+			8j4ygOm2TtZVUBP4YmwIglZzinceLhMzNqGO3+kAkbk=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
