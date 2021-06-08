@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "PubguardSDK"
-  spec.version      = "0.0.9"
+  spec.version      = "0.1.0"
   spec.summary      = "PubguardSDK framework for iOS."
 
   spec.description  = <<-DESC
