@@ -235,7 +235,7 @@ These are SDKs designed specifically for serving advertising content into your a
 
 ### iOS Requirements
 
-+ iOS 9.0 and up
++ iOS 12.1 and up
 + Xcode 12.2 and up
 
 ---
