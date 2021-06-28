@@ -216,20 +216,19 @@ These are SDKs designed specifically for serving advertising content into your a
 
 | Company/Product | iOS SDK identifier | SDK versions |
 | ------- | ----- | ------- |
-| AdColony | AdColony | 4.4.1 |
-| AdMob | Google-Mobile-Ads-SDK | 7.68.0 |
-| Amazon Mobile Ads | AmazonAd | 3.1.0 |
-| Amazon Transparent Ad Marketplace | AmazonPublisherServicesSDK | 3.4.0 |
-| AppLovin | AppLovinSDK | 6.14.5 |
-| Chartboost | ChartboostSDK | 8.3.1 |
+| AdColony | AdColony | 4.6.0 |
+| AdMob | Google-Mobile-Ads-SDK | 8.4.0 |
+| Amazon Transparent Ad Marketplace | AmazonPublisherServicesSDK | 3.4.6 |
+| AppLovin | AppLovinSDK | 10.1.1 |
+| Chartboost | ChartboostSDK | 8.4.1 |
 | Fyber Marketplace | Fyber_Marketplace_SDK | 7.7.2 |
 | InMobi | InMobiSDK | 9.1.1 |
-| IronSource | IronSourceSDK | 7.0.3 |
-| MoPub | mopub-ios-sdk | 5.14.1 |
-| Smaato | smaato-ios-sdk | 21.6.5 |
-| Unity Ads | UnityAds | 3.5.0 |
-| Verizon | Verizon-Ads-StandardEdition | 1.8.0 |
+| IronSource | IronSourceSDK | 7.1.5 |
+| MoPub | mopub-ios-sdk | 5.17.0 |
+| Smaato | smaato-ios-sdk | 21.6.12 |
+| Unity Ads | UnityAds | 3.7.1 |
 | Vungle | VungleSDK-iOS | 6.8.1 |
+
 
 ## Requirements
 
