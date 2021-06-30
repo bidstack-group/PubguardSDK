@@ -24,8 +24,8 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/bidstack-group/pubguard-sdk-ios/releases/download/v#{spec.version}/PubguardSDK.xcframework.zip" }
 
-#  spec.dependency "libffi-iOS", "3.3.5-iOS"
-#  spec.dependency "SwiftProtobuf", "1.15.0"
+  spec.dependency "libffi-iOS", "3.3.5-iOS"
+  spec.dependency "SwiftProtobuf", "1.15.0"
 
   spec.source_files  = "Classes", "Classes/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
