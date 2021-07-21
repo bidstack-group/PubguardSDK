@@ -21,14 +21,13 @@ Pod::Spec.new do |spec|
 
   spec.author       = { "Alexey Volkov" => "aleksejs.volkovs@bidstack.com" }
   spec.platform     = :ios, "12.0"
+  spec.swift_version = '5.0'
 
   spec.source       = { :git => "ssh://github.com/bidstack-group/pubguard-sdk-ios/releases/download/v#{spec.version}/PubguardSDK.xcframework.zip" }
 
   spec.dependency "libffi-iOS", "3.3.5-iOS"
   spec.dependency "SwiftProtobuf", "1.15.0"
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
-  spec.exclude_files = "Classes/Exclude"
   spec.vendored_frameworks  = "PubguardSDK.xcframework"
 	
 end
