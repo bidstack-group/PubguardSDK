@@ -25,7 +25,6 @@ Pod::Spec.new do |spec|
 
   spec.source       = { :git => "https://github.com/bidstack-group/pubguard-sdk-ios.git", :tag => "v#{spec.version}" }
 
-  spec.vendored_frameworks  = "PubguardSDK.xcframework"
-  spec.vendored_frameworks  = 'Frameworks/*.xcframework'
+  spec.vendored_frameworks  = "PubguardSDK.xcframework", "Frameworks/*.xcframework"
  	
 end
