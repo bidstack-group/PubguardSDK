@@ -6,31 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		0lBeDAwxTu79M15LPZXfy7BW1+Q=
-		</data>
-		<key>Frameworks/SwiftProtobuf.framework/Info.plist</key>
-		<data>
-		OBlG/pqUZvYYpKcp36sBbIaTLGw=
-		</data>
-		<key>Frameworks/SwiftProtobuf.framework/SwiftProtobuf</key>
-		<data>
-		ygWZS8sk8/2/aHmzEfppnvLBfGE=
-		</data>
-		<key>Frameworks/SwiftProtobuf.framework/_CodeSignature/CodeResources</key>
-		<data>
-		TPtyv9md9TUxVrXcTGRTT30zoYM=
-		</data>
-		<key>Frameworks/libffi_iOS.framework/Info.plist</key>
-		<data>
-		sLxCG3+O3BpQ6VFQTMrlzIFZxYI=
-		</data>
-		<key>Frameworks/libffi_iOS.framework/_CodeSignature/CodeResources</key>
-		<data>
-		ZPdlNTgP4z8fV8Pxyugua7mmd2I=
-		</data>
-		<key>Frameworks/libffi_iOS.framework/libffi_iOS</key>
-		<data>
-		y4ZYI1voSTXjqk/a2KqFp1PVYD4=
+		XAH9g8tJ6pZRnsnG3wfPJ/N+NkY=
 		</data>
 		<key>Headers/ObjectProperties.h</key>
 		<data>
@@ -147,77 +123,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0lBeDAwxTu79M15LPZXfy7BW1+Q=
+			XAH9g8tJ6pZRnsnG3wfPJ/N+NkY=
 			</data>
 			<key>hash2</key>
 			<data>
-			uSiNYwivyXiRAjx9A8kGG+vJTcx1rp6vo2xkH1uZmHc=
-			</data>
-		</dict>
-		<key>Frameworks/SwiftProtobuf.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			OBlG/pqUZvYYpKcp36sBbIaTLGw=
-			</data>
-			<key>hash2</key>
-			<data>
-			P0J8TpYcAZ617mN7RVfXIQt59+PRuoUGYgkTVVon5Kk=
-			</data>
-		</dict>
-		<key>Frameworks/SwiftProtobuf.framework/SwiftProtobuf</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ygWZS8sk8/2/aHmzEfppnvLBfGE=
-			</data>
-			<key>hash2</key>
-			<data>
-			v6OpW8xQqLwtmYs1UH3kFnoY8ZsnPJmmGJ/yBG7yS0I=
-			</data>
-		</dict>
-		<key>Frameworks/SwiftProtobuf.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			TPtyv9md9TUxVrXcTGRTT30zoYM=
-			</data>
-			<key>hash2</key>
-			<data>
-			UF48/zQOGvmLHwem0PqR+JToumXaxpLfeWUQWPDkl7M=
-			</data>
-		</dict>
-		<key>Frameworks/libffi_iOS.framework/Info.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			sLxCG3+O3BpQ6VFQTMrlzIFZxYI=
-			</data>
-			<key>hash2</key>
-			<data>
-			degrArJR5EXi+GzV4lcFpPVBkQlrHo69kcf0D8aMK0o=
-			</data>
-		</dict>
-		<key>Frameworks/libffi_iOS.framework/_CodeSignature/CodeResources</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			ZPdlNTgP4z8fV8Pxyugua7mmd2I=
-			</data>
-			<key>hash2</key>
-			<data>
-			N0nrwffIr8TQMGUJYduvsuAax+m5xeEH8xV4ikPvPmE=
-			</data>
-		</dict>
-		<key>Frameworks/libffi_iOS.framework/libffi_iOS</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			y4ZYI1voSTXjqk/a2KqFp1PVYD4=
-			</data>
-			<key>hash2</key>
-			<data>
-			XJxL005W4Y/0OeF2CXKeLJGq+SXNmhhc+T+RBjAhdig=
+			y6CyQLShB2m+ru16t6XXSUW6fABg0V84cOtY4te+g8U=
 			</data>
 		</dict>
 		<key>Headers/ObjectProperties.h</key>
