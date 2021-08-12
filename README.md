@@ -223,7 +223,7 @@ These are SDKs designed specifically for serving advertising content into your a
 | Chartboost | ChartboostSDK | 8.4.1 |
 | Fyber Marketplace | Fyber_Marketplace_SDK | 7.7.2 |
 | InMobi | InMobiSDK | 9.1.1 |
-| IronSource | IronSourceSDK | 7.1.5 |
+| IronSource | IronSourceSDK | 7.1.6 |
 | MoPub | mopub-ios-sdk | 5.17.0 |
 | Smaato | smaato-ios-sdk | 21.6.12 |
 | Unity Ads | UnityAds | 3.7.1 |
