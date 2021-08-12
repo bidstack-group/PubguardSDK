@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "PubguardSDK"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "PubGuard — A leading ad quality platform that specialises in ad-quality monitoring and analysis of offensive ads for publishers."
 
   spec.description  = <<-DESC
@@ -20,13 +20,10 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => 'MIT', :file => 'LICENSE.TXT' }
 
   spec.author       = { "Alexey Volkov" => "aleksejs.volkovs@bidstack.com" }
-  spec.platform     = :ios, "12.0"
+  spec.platform     = :ios, "10.0"
   spec.swift_version = '5.0'
 
   spec.source       = { :git => "ssh://github.com/bidstack-group/pubguard-sdk-ios.git", :tag => "v#{spec.version}" }
-
-  spec.dependency "libffi-iOS", "3.3.5-iOS"
-  spec.dependency "SwiftProtobuf", "1.15.0"
 
   spec.vendored_frameworks  = "PubguardSDK.xcframework"
  	
