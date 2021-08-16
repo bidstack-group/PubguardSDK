@@ -39,7 +39,7 @@ Before installing the Pubguard library you will need an application key,  please
 
 # iOS
 
-The latest version of the iOS Pubguard Library is **1.0.0**
+The latest version of the iOS Pubguard Library is **1.0.1**
 
 ### Installing
 
@@ -86,7 +86,7 @@ Unity supports installation via cocoapods and manual installation. Framework mus
 Please ensure that your Podfile containing the following line:
 
 ```
-pod 'PubguardSDK', '~> 1.0.0'
+pod 'PubguardSDK'
 ```
 
 Then run "pod install --repo-update"
