@@ -50,7 +50,7 @@ There are 2 methods of installing the Pubguard framework:
 Please add the following line to your Podfile (adding in your app key):
 
 ```
-pod 'PubguardSDK', '~> 1.0.0'
+pod 'PubguardSDK'
 ```
 
 Then run "pod install --repo-update"
@@ -62,16 +62,17 @@ Please request the Pubguard Library Bundle from support@pubguard.com or clone th
 git clone https://github.com/bidstack-group/pubguard-sdk-ios.git
 ```
 
-The Pubguard Bundle contains two frameworks: 
+The Pubguard Bundle contains three frameworks: 
 Pubguard.xcframework  
-SwiftProtobuf.frameworks  
+Frameworks/SwiftProtobuf.xcframeworks  
+Frameworks/libffi-iOS.xcframeworks
 
-Copy these two frameworks into your Xcode project and add them to all targets:
+Copy these three frameworks into your Xcode project and add them to all targets:
 
 ![alt text](manual/imgs/add.png)
 
-These two frameworks will appear in *Frameworks, Libraries, and Embedded Content* section.
-Choose *Embed and Sign* for both frameworks, as on the image below:
+These three frameworks will appear in *Frameworks, Libraries, and Embedded Content* section.
+Choose *Embed and Sign* for all the frameworks, as on the image below:
 
 ![alt text](manual/imgs/link.png)
 
