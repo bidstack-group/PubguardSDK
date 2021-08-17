@@ -217,18 +217,18 @@ These are SDKs designed specifically for serving advertising content into your a
 
 | Company/Product | iOS SDK identifier | SDK versions |
 | ------- | ----- | ------- |
-| AdColony | AdColony | 4.6.0 |
-| AdMob | Google-Mobile-Ads-SDK | 8.4.0 |
+| AdColony | AdColony | 4.4.1, 4.5.0, 4.6.0, 4.6.1, 4.7.0 |
+| AdMob | Google-Mobile-Ads-SDK | 8.4.0, 8.5.0, 8.6.0, 8.7.0, 8.8.0 |
 | Amazon Transparent Ad Marketplace | AmazonPublisherServicesSDK | 3.4.6 |
-| AppLovin | AppLovinSDK | 10.1.1 |
-| Chartboost | ChartboostSDK | 8.4.1 |
-| Fyber Marketplace | Fyber_Marketplace_SDK | 7.7.2 |
+| AppLovin | AppLovinSDK | 10.1.1, 10.2.0, 10.2.1, 10.3.1, 10.3.2, 10.3.3, 10.3.4 |
+| Chartboost | ChartboostSDK | 8.3.1, 8.4.1, 8.4.2 |
+| Fyber Marketplace | Fyber_Marketplace_SDK | 7.7.2, 7.7.3, 7.8.0, 7.8.1, 7.8.3, 7.8.5, 7.8.6, 7.8.7 |
 | InMobi | InMobiSDK | 9.1.1 |
 | IronSource | IronSourceSDK | 7.1.6 |
-| MoPub | mopub-ios-sdk | 5.17.0 |
-| Smaato | smaato-ios-sdk | 21.6.12 |
-| Unity Ads | UnityAds | 3.7.1 |
-| Vungle | VungleSDK-iOS | 6.8.1 |
+| MoPub | mopub-ios-sdk | 5.17.0, 5.18.0 |
+| Smaato | smaato-ios-sdk | 21.6.12, 21.6.13, 21.6.14, 21.6.15, 21.6.16 |
+| Unity Ads | UnityAds | 3.7.1,  3.7.2, 3.7.4, 3.7.5 |
+| Vungle | VungleSDK-iOS | 6.8.1, 6.9.1, 6.9.2 |
 
 
 ## Requirements
