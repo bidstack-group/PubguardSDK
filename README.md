@@ -172,33 +172,9 @@ didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 @end
 ```
 
-
-
 ## Unity Plugin
 
-The latest version of the Pubguard Plugin is **1.0.0**
-
-Start with importing Pubguard Package. From the **Assets** menu, choose **Import Package**, plus the name of the package you want to import.
-
-![unity-1](manual/imgs/unity-1.png)
-
-Select **Import** and Unity puts the contents of the package into a **Standard Asset** folder, which you can access from your **Project View**.
-
-![unity-2](manual/imgs/unity-2.png)
-
-1. From **Project** tab, exapnd **Assets** folder and click on **Prefabs**.
-2. Drag and Drop **Pubguard** plugin to the Project **Hierachy** list.
-3. The **PubguardController** shoud appear in the **Hierachy** list as shown on the image below.
-
-![unity-3](manual/imgs/unity-3.png)
-
-Click on the **PubguardControler** and from the **Inspector** tab enter the Pubguards's Application Key.
-
-Check the [Prerequisites](#Prerequisites) section explaining how to obtain the Application Key.
-
-![unity-4](manual/imgs/unity-4.png)
-
-The Pubguard plugin installation is now completed.
+The Unity plugin instructions can be found [here](https://github.com/bidstack-group/pubguard-unity-plugin).
 
 ---
 
