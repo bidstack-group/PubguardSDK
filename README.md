@@ -84,7 +84,7 @@ Unity supports installation via cocoapods and manual installation. Framework mus
 
 ##### cocoapods (Unity)
 
-Please ensure that your Podfile containing the following line:
+Please ensure that your Podfile contains the following line:
 
 ```
 pod 'PubguardSDK'
