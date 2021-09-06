@@ -4,7 +4,7 @@
 
 A guide to installing Pubguard on your application, with instructions, demos and FAQs
 
-The Pubguard Library is solution that monitors the advertising content flowing through your mobile app, protecting against unwanted content and optimising revenues.
+The Pubguard Library is solution that monitors the advertising content flowing through your mobile app, protecting user against unwanted ad content.
 
 The data from the library is then accessible via your account on the Pubguard interface where you can set up preferences, alerts and browse the gallery.
 
@@ -28,12 +28,13 @@ Table of contents
 
 # Getting Started
 
-These instructions will enable you to get the Pubguard library running on your iOS/Unity app.  
+These instructions will enable you to get the Pubguard Library running on your iOS/Unity app.  
 Android instructions can be found [here](https://github.com/bidstack-group/pubguard-sdk-android)
 
 ## Prerequisites
 
-Before installing the Pubguard library you will need an application key,  please visit the [Pubguard Portal](https://dashboard.pubguard.com/) for more details.
+Before installing the Pubguard Library you will need an API key, which is available through your Pubguard account. To retrieve an API key, please access on http://dashboard.pubguard.com or email support@pubguard.com. The key is used in both the iOS and Android installations.  
+If you do not have a Pubguard account, please sign up on https://pubguard.com/
 
 ---
 
