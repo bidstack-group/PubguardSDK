@@ -102,8 +102,8 @@ The Pubguard Library should be initialised once at app launch, Here's an example
 
 #### Swift
 
-The Pubguard Library contains the Swift Module.  
-You only need to import that module, check the code example below:  
+The Pubguard Library contains the Swift Module, you only need to import that module.  
+Check the code example below:  
 
 ```swift
 *Example AppDelegate.swift*
