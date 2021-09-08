@@ -1,12 +1,12 @@
 ![alt text](manual/imgs/pg-logo.png)
 
-# Pubguard Library
+# Pubguard Framework
 
-A guide to installing Pubguard on your application, with instructions, demos and FAQs
+A guide to installing Pubguard Framework on your application, with instructions, demos and FAQs
 
-The Pubguard Library is solution that monitors the advertising content flowing through your mobile app, protecting user against unwanted ad content.
+The Pubguard Framework is solution that monitors the advertising content flowing through your mobile app, protecting user against unwanted ad content.
 
-The data from the library is then accessible via your account on the Pubguard interface where you can set up preferences, alerts and browse the gallery.
+The data from the Framework is then accessible via your account on the Pubguard interface where you can set up preferences, alerts and browse the gallery.
 
 ---
 
@@ -28,23 +28,23 @@ Table of contents
 
 # Getting Started
 
-These instructions will enable you to get the Pubguard Library running on your iOS/Unity app.  
+These instructions will enable you to get the Pubguard Framework running on your iOS/Unity app.  
 Android instructions can be found [here](https://github.com/bidstack-group/pubguard-sdk-android)
 
 ## Prerequisites
 
-Before installing the Pubguard Library you will need an API key, which is available through your Pubguard account. To retrieve an API key, please access on http://dashboard.pubguard.com or email support@pubguard.com. The key is used in both the iOS and Android installations.  
+Before installing the Pubguard Framework you will need an API key, which is available through your Pubguard account. To retrieve an API key, please access on http://dashboard.pubguard.com or email support@pubguard.com. The key is used in both the iOS and Android installations.  
 If you do not have a Pubguard account, please sign up on https://pubguard.com/
 
 ---
 
 # iOS
 
-The latest version of the iOS Pubguard Library is **1.0.1**
+The latest version of the iOS Pubguard Framework is **1.0.1**
 
 ### Installing
 
-There are 2 methods of installing the Pubguard framework:
+There are 2 methods of installing the Pubguard Framework:
 
 #### Using cocoapods
 
@@ -56,9 +56,9 @@ pod 'PubguardSDK'
 
 Then run "pod install --repo-update"
 
-#### Adding the library manually
+#### Adding the Pubguard Framework manually
 
-Please request the Pubguard Library Bundle from support@pubguard.com or clone the bundle from the git repository:
+Please request the Pubguard Framework Bundle from support@pubguard.com or clone the bundle from the git repository:
 ```
 git clone https://github.com/bidstack-group/pubguard-sdk-ios.git
 ```
@@ -94,15 +94,15 @@ Then run "pod install --repo-update"
 
 ##### manual (Unity)
 
-Manual installation is the same [instructions](#Adding the library manually).
+Manual installation is the same [instructions](#Adding the Pubguard Framework manually).
 
-### Initialising the Library
+### Initialising the Pubguard Framework
 
-The Pubguard Library should be initialised once at app launch, Here's an example of how to call the init method in your AppDelegate:
+The Pubguard Framework should be initialised once at app launch, Here's an example of how to call the init method in your AppDelegate:
 
 #### Swift
 
-The Pubguard Library contains the Swift Module, you only need to import that module.  
+The Pubguard Framework contains the Swift Module, you only need to import that module.  
 Check the code example below:  
 
 ```swift
@@ -120,7 +120,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         func application(_ application: UIApplication,
                          didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-        // Initialize the Pubguard Library.
+        // Initialize the Pubguard Framework.
         Pubguard.initiateTracker(withKey: "YOUR_PUBGUARD_KEY_HERE")
 
         return true
@@ -142,7 +142,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    // Initialize the Pubguard Library.
+    // Initialize the Pubguard Framework.
     [Pubguard initiateTrackerWithKey:@"YOUR_PUBGUARD_KEY_HERE"];
     return YES;
 }
@@ -165,7 +165,7 @@ As was mentioned earlier, pubguard installation and initialization must be in Xc
 - (BOOL)application:(UIApplication *)application
 didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    // Initialize the Pubguard Library.
+    // Initialize the Pubguard Framework.
     [Pubguard initiateTrackerWithKey:@"YOUR_PUBGUARD_KEY_HERE"];
     return YES;
 }
