@@ -92,10 +92,6 @@ pod 'PubguardSDK'
 
 Then run "pod install --repo-update"
 
-##### manual (Unity)
-
-Manual installation is the same [instructions](#Adding the Pubguard Framework manually).
-
 ### Initialising the Pubguard Framework
 
 The Pubguard Framework should be initialised once at app launch, Here's an example of how to call the init method in your AppDelegate:
