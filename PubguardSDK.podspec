@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "PubguardSDK"
-  spec.version      = "1.0.1"
+  spec.version      = "1.1.0"
   spec.summary      = "PubGuard — A leading ad quality platform that specialises in ad-quality monitoring and analysis of offensive ads for publishers."
 
   spec.description  = <<-DESC
