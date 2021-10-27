@@ -63,20 +63,13 @@ Please request the Pubguard Framework Bundle from support@pubguard.com or clone 
 git clone https://github.com/bidstack-group/pubguard-sdk-ios.git
 ```
 
-The Pubguard Bundle contains three frameworks: 
+The Pubguard Bundle contains two frameworks: 
 Pubguard.xcframework  
-Frameworks/SwiftProtobuf.xcframeworks  
-Frameworks/libffi-iOS.xcframeworks
+Frameworks/SwiftProtobuf.xcframeworks
 
-Copy these three frameworks into your Xcode project and add them to all targets:
+Copy these two frameworks into your Xcode project and add them to all targets:
 
 ![alt text](manual/imgs/add.png)
-
-These three frameworks will appear in *Frameworks, Libraries, and Embedded Content* section.
-Choose *Embed and Sign* for all the frameworks, as on the image below:
-
-![alt text](manual/imgs/link.png)
-
 
 #### Unity installation
 
@@ -190,18 +183,20 @@ These are SDKs designed specifically for serving advertising content into your a
 
 | Company/Product | iOS SDK identifier | SDK versions |
 | ------- | ----- | ------- |
-| AdColony | AdColony | 4.6.1, 4.7.0, 4.7.1 |
-| AdMob | Google-Mobile-Ads-SDK | 8.8.0, 8.9.0, 8.10.0 |
+| AdColony | AdColony | 4.6.1, 4.7.0, 4.7.1, 4.7.2 |
+| AdMob | Google-Mobile-Ads-SDK | 8.8.0, 8.9.0, 8.10.0, 8.11.0 |
 | Amazon Transparent Ad Marketplace | AmazonPublisherServicesSDK | 3.4.6 |
-| AppLovin | AppLovinSDK | 10.3.3, 10.3.4, 10.3.5 |
+| AppLovin | AppLovinSDK | 10.3.2, 10.3.3, 10.3.4, 10.3.5., 10.3.6 |
 | Chartboost | ChartboostSDK | 8.4.0, 8.4.1, 8.4.2 |
-| Fyber Marketplace | Fyber_Marketplace_SDK | 7.8.6, 7.8.7, 7.8.8 |
+| Fyber Marketplace | Fyber_Marketplace_SDK | 7.8.6, 7.8.7, 7.8.8, 7.8.9, 7.9.0 |
 | InMobi | InMobiSDK | 9.1.1, 9.2.1 |
-| IronSource | IronSourceSDK | 7.1.6, 7.1.10 |
+| IronSource | IronSourceSDK | 7.1.7, 7.1.8, 7.1.9, 7.1.10, 7.1.11 |
+| Mintegral | MintegralAdSDK | 6.9.6, 7.0.0, 7.0.1, 7.0.2, 7.0.3 |
 | MoPub | mopub-ios-sdk | 5.17.0, 5.18.0 |
 | Smaato | smaato-ios-sdk | 21.6.12, 21.6.13, 21.6.14, 21.6.15, 21.6.16 |
+| TapJoy | TapjoySDK | 12.6.1, 12.7.0, 12.7.1, 12.8.0, 12.8.1 |
 | Unity Ads | UnityAds | 3.7.1,  3.7.2, 3.7.4, 3.7.5 |
-| Vungle | VungleSDK-iOS | 6.8.1, 6.9.1, 6.9.2, 6.10.1 |
+| Vungle | VungleSDK-iOS | 6.8.1, 6.9.1, 6.9.2, 6.10.1, 6.10.3 |
 
 
 ## Requirements
