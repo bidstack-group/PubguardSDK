@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		gVMitK3spIwh1hNSA8FB2zeYxqI=
+		dn0aJLiXA9w49ZWefbKk1/jX5+c=
 		</data>
 		<key>Headers/PubguardSDK-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		54Bk958K044BPkmaBXKjV2Z0mJw=
+		wuqMkooQUlSIGlx3VC4EBYRYyjg=
 		</data>
 		<key>InternalDataModel.momd/InternalDataModel.mom</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		wPsrv+Jg/Lu7AVJULgPahKgac4g=
+		VB7WQY1BouCOZBXE35FhPBU6oJg=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		wPsrv+Jg/Lu7AVJULgPahKgac4g=
+		VB7WQY1BouCOZBXE35FhPBU6oJg=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		/qJ2v9eDqMV9i2xU42RqMAqeO3U=
+		7amAUe3DZm7wEMdqhRMOBQjh2S8=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/i386.swiftmodule</key>
 		<data>
-		/qJ2v9eDqMV9i2xU42RqMAqeO3U=
+		7amAUe3DZm7wEMdqhRMOBQjh2S8=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tJoe6p4CcOXgZ7MzM+xHGckX8YU=
+		ozBuwHmxyLAWiabeP6Mi7NtDDQ8=
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		tJoe6p4CcOXgZ7MzM+xHGckX8YU=
+		ozBuwHmxyLAWiabeP6Mi7NtDDQ8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -127,11 +127,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gVMitK3spIwh1hNSA8FB2zeYxqI=
+			dn0aJLiXA9w49ZWefbKk1/jX5+c=
 			</data>
 			<key>hash2</key>
 			<data>
-			qE668wHNZZpX8ItXfuaOV9rqwGxf98Aq6TFo5L/KFBQ=
+			iPhju/tp16Z2bvgwJ4ncwYgICheSjQ0xR9p4WByRR3M=
 			</data>
 		</dict>
 		<key>Headers/PubguardSDK-Swift.h</key>
@@ -204,11 +204,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wPsrv+Jg/Lu7AVJULgPahKgac4g=
+			VB7WQY1BouCOZBXE35FhPBU6oJg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ykutYz9LNAkmlpuhzhUl0vXEPNuxIT4H0Jw+9ora9HE=
+			CgY60Z/hq7EImsdKEnVIgWu3slsyvsCGK86VQl2MI7k=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/arm64.swiftdoc</key>
@@ -237,11 +237,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wPsrv+Jg/Lu7AVJULgPahKgac4g=
+			VB7WQY1BouCOZBXE35FhPBU6oJg=
 			</data>
 			<key>hash2</key>
 			<data>
-			ykutYz9LNAkmlpuhzhUl0vXEPNuxIT4H0Jw+9ora9HE=
+			CgY60Z/hq7EImsdKEnVIgWu3slsyvsCGK86VQl2MI7k=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -270,11 +270,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/qJ2v9eDqMV9i2xU42RqMAqeO3U=
+			7amAUe3DZm7wEMdqhRMOBQjh2S8=
 			</data>
 			<key>hash2</key>
 			<data>
-			HgCt/DgTe8lhhBXkPUm9blAVSVYklTftQ9qxd6pssuo=
+			JpeOAlwwGzsTXH0E+FLwk1npMXqtGuSaA1lHdKXMnMg=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/i386.swiftdoc</key>
@@ -303,11 +303,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			/qJ2v9eDqMV9i2xU42RqMAqeO3U=
+			7amAUe3DZm7wEMdqhRMOBQjh2S8=
 			</data>
 			<key>hash2</key>
 			<data>
-			HgCt/DgTe8lhhBXkPUm9blAVSVYklTftQ9qxd6pssuo=
+			JpeOAlwwGzsTXH0E+FLwk1npMXqtGuSaA1lHdKXMnMg=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -336,11 +336,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tJoe6p4CcOXgZ7MzM+xHGckX8YU=
+			ozBuwHmxyLAWiabeP6Mi7NtDDQ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			TkcOeGhDAkYMQFwb6SkS+6k4lCm1rT0WvtvrxyD5G64=
+			pWI3x++9xUsD0kjAPg7e0Q1VHX/LY3YVfPb7NHaDXZI=
 			</data>
 		</dict>
 		<key>Modules/PubguardSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -369,11 +369,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			tJoe6p4CcOXgZ7MzM+xHGckX8YU=
+			ozBuwHmxyLAWiabeP6Mi7NtDDQ8=
 			</data>
 			<key>hash2</key>
 			<data>
-			TkcOeGhDAkYMQFwb6SkS+6k4lCm1rT0WvtvrxyD5G64=
+			pWI3x++9xUsD0kjAPg7e0Q1VHX/LY3YVfPb7NHaDXZI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -2,6 +2,11 @@
 
 ## iOS
 
+### 1.3.0 (2022/02/08)
+* Added support of the latest ad network versions (Refer to the readme file for the list of the supported versions).
+* Stability improvements
+* Minor Bug fixes
+
 ### 1.2.0 (2021/12/17)
 * Added support of the latest ad network versions (Refer to the readme file for the list of the supported versions).
 * Stability improvements
