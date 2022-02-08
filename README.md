@@ -216,4 +216,4 @@ Please use the most up to date version at all times to ensure maximum support.
 
 ## License
 
-*© 2021 Minimised Media Limited (Pubguard© 2019 All Rights Reserved)*
+*© 2022 Minimised Media Limited (Pubguard© 2022 All Rights Reserved)*
